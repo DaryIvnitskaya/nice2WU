@@ -1,0 +1,27 @@
+// Variables
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+@import "abstracts/functions";
+
+// General styling for certain things
+@import "base/ui-kit";
+@import "base/typography";
+
+// Components
+@import "components/buttons";
+@import "components/carousel";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/information";
+@import "layout/showcase";
+
+// Main
+@import "pages/home";
+@import "pages/contacts";
+@import "pages/product-page";
+
+
+

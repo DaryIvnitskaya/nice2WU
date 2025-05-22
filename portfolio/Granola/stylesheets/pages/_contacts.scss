@@ -1,0 +1,194 @@
+.contacts-us{
+	padding: 30px 0;
+	&__title{
+		margin: 0 0 35px;
+	}
+	&__row{
+		display: flex;
+		padding: 0 110px 0 80px;
+		@include respond(desktop) {
+	    	padding: 0;
+	    }
+	    @include respond(tab-port) {
+	    	flex-wrap: wrap;
+	    }
+	}
+	&__info{
+		.h4{
+			margin: 0 0 40px;
+		}
+	}
+	&__col{
+		&_left{
+			flex: 0 0 335px;
+			max-width: 335px;
+			@include respond(phone-land-more) {
+		    	flex: 0 0 100%;
+				max-width: 100%;
+				margin-bottom: 30px;
+		    }
+		}
+		&_right{
+			flex: 1 1 100%;
+			padding-left: 152px;
+			@include respond(desktop-more) {
+		    	padding-left: 50px;
+		    }
+		    @include respond(tab-port) {
+		    	padding-left: 0;
+		    }
+		}
+	}
+	&__links{
+		margin-bottom: 30px;
+		a{
+			margin-bottom: 10px;
+		}
+	}
+	&__form{
+		input:not([type="submit"]),textarea{
+			width: 100%;
+		}
+		textarea{
+			margin-bottom: 31px;
+		}
+		.btn-original{
+			min-width: 145px;
+			height: 45px;
+			line-height: 45px;
+			border-radius: 5px;
+		}
+	}
+	&__socials{
+		text-align: right;
+		margin-bottom: 40px;
+		@include respond(phone-land-more) {
+			text-align: left;
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			@include respond(phone-land-more) {
+				justify-content: flex-start;
+			}
+			li{
+				margin-left: 24px;
+				@include respond(phone-land-more) {
+					margin-right: 20px;
+					margin-left: 0;
+				}
+				a{
+					display: flex;
+					path{
+						transition: ease all 0.3s;
+					}
+					&:hover{
+						path{
+							fill:$orange;
+						}
+					}
+				}
+			}
+		}
+	}
+	&__map{
+		position: relative;
+		.h4{
+			margin: 0 0 30px;
+		}
+		.map__address{
+			position: absolute;
+	        top: 115px;
+		    right: 110px;
+		    .h4{
+		    	margin: 0 0 20px;
+		    	text-align: center;
+		    }
+			span{
+				display: block;
+				font-size: 16px;
+				line-height: 19px;
+				text-align: center;
+				color: $grey;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+.address-info{
+	margin-bottom: 30px;
+	&__item{
+		display: flex;
+	}
+	&__title{
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 32px;
+		text-transform: uppercase;
+		color:$d-black;
+		margin-right: 26px;
+		flex: 0 0 70px;
+		max-width: 70px;
+		@include respond(phone) {
+			font-size: 14px;
+			line-height: normal;
+			flex: 0 0 60px;
+			max-width: 60px;
+		}
+	}
+	&__adr{
+		font-size: 16px;
+		line-height: 32px;
+		color:$d-black;
+		flex:1;
+		@include respond(phone) {
+			font-size: 14px;
+			line-height: normal;
+		}
+	}
+}
+
+input,
+textarea{
+	background: #FFF4E7;
+	border-radius: 5px;
+	border:0;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 15px;
+	margin-bottom: 10px;
+	display: block;
+}
+textarea{
+	height: 100px;
+	line-height: normal;
+	padding-top: 15px;
+}
+
+.social{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	li{
+		margin-left: 24px;
+		a{
+			display: flex;
+			path{
+				transition: ease all 0.3s;
+			}
+			&:hover{
+				path{
+					fill:$orange;
+				}
+			}
+		}
+	}
+}

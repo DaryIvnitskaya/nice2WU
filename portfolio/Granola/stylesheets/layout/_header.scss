@@ -1,0 +1,92 @@
+.header{
+	background: #FFFFFF;
+	border-bottom: 1px solid #DEDEDE;
+	padding: 0;
+	&__row{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo{
+		margin-right: 10px;
+	}
+	&__burger{
+		display: none;
+		margin-left: auto;
+		position: relative;
+		@include respond(tab-port) {
+			display: block;
+			z-index: 9999;
+		}
+	}
+	&__nav{
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			li{
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 16px;
+				text-transform: uppercase;
+				margin-left: 77px;
+				white-space: nowrap;
+				@include mediamax(1320px) {
+					margin-left: 40px;
+				}
+				@include mediamax(880px) {
+					margin-left: 20px;
+				}
+			}
+		}
+		@include respond(tab-port) {
+			//display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.7);
+			z-index: 9998;
+			opacity: 0;
+			visibility: hidden;
+			transition: ease all 0.3s;
+			&.active{
+				opacity: 1;
+				visibility: visible;
+			}
+			ul{
+				flex-direction: column;
+				justify-content: center;
+				height: 100%;
+				li{
+					width: 100%;
+					font-size: 18px;
+					text-align: center;
+					margin: 20px 0;
+					a{
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+.logo{
+	flex: 0 0 229px;
+	max-width: 229px;
+	a{
+		display: block;
+		&:hover{
+			opacity: 0.7;
+		}
+	}
+	@include mediamax(370px) {
+		flex: 0 0 200px;
+		max-width: 200px;
+	}
+}

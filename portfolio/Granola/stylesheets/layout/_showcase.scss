@@ -1,0 +1,139 @@
+.showcase{
+	padding: 35px 0 25px;
+	border-top: 1px solid #C5C7C6;
+	@include respond(tab-port) {
+		padding: 20px 0 15px;
+	}
+	&__row{
+		display: flex;
+		flex-wrap: wrap;
+		@include respond(desktop) {
+			margin: 0 -10px;
+		}
+	}
+	&__col{
+		flex: 0 0 25%;
+		max-width: 25%;
+		padding: 10px;
+		@include mediamax(850px) {
+			flex: 0 0 33.333%;
+			max-width: 33.333%;
+		}
+		@include mediamax(650px) {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+		@include respond(phone) {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+	&__item{
+		background: linear-gradient(270deg, #FFFFFF 68.85%, rgba(255, 255, 255, 0) 90.25%);
+		border: 1px solid #E8EAEB;
+		border-radius: 10px;
+		padding: 20px;
+		transition: ease all 0.3s;
+		height: 307px;
+		position: relative;
+		&:hover{
+			border-color: $orange;
+		}
+	}
+	&__image{
+		height: 134px;
+		overflow: hidden;
+		width: 100%;
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__descr{
+		.title{
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 24px;
+			color: $black;
+			margin-bottom: 15px;
+			height: 24px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			transition: linear all 0.3s;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			.showcase__item:hover &{
+				text-align: center;
+				height: 80px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0;
+				transition: linear all 0.3s;
+			}
+		}
+		.description{
+			height: 72px;
+			overflow: hidden;
+			transition: ease all 0.3s;
+			.showcase__item:hover &{
+				opacity: 0;
+				visibility: hidden;
+				z-index: -1;
+			}
+			strong{
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 16px;
+				text-transform: uppercase;
+				color:$orange;
+				margin:0 0 5px;
+			}
+			p{
+				margin: 0;
+				font-size: 16px;
+				line-height: 24px;
+				color:$black;
+				a{
+					color: $green;
+					font-weight: bold;
+					display: inline-block;
+					&:hover{
+						opacity: 0.7;
+					}
+				}
+			}
+		}
+	}
+	&__btn{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		opacity: 0;
+		visibility: hidden;
+		z-index: -1;
+		transition: ease all 0.3s;
+		background: #fff;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 16px;
+		background: $orange;
+		.showcase__item:hover &{
+			display: block;
+			opacity: 1;
+			visibility: visible;
+			z-index: 2;
+			
+		}
+		&:hover{
+			color: #fff;
+			background:rgba(242,101,0,0.7);
+		}
+	}
+}

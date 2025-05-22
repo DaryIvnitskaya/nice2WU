@@ -1,0 +1,298 @@
+.information{
+	padding: 30px 0 60px;
+	@include respond(tab-port) {
+		padding-bottom: 30px;
+	}
+	&__title{
+		margin: 0 0 40px;
+		@include respond(tab-port) {
+			margin-bottom: 20px;
+		}
+	}
+	&__row{
+		padding: 0 15px 0 30px;
+		@include respond(desktop) {
+			padding: 0;
+		}
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+		background: #fff;
+		padding: 20px;
+		border-radius: 20px;
+		margin-bottom: 30px;
+		flex-wrap: wrap;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		@include respond(tab-land) {
+			align-items: flex-start;
+		}
+	}
+	&__image{
+		flex: 0 0 408px;
+		max-width: 408px;
+		border-radius: 15px;
+		overflow: hidden;
+		margin: 0;
+		img{
+			border-radius: 15px;
+		}
+		@include respond(desktop) {
+			flex: 0 0 358px;
+			max-width: 358px;
+		}
+		@include respond(tab-land) {
+			flex: 0 0 308px;
+			max-width: 308px;
+		}
+		@include respond(tab-port) {
+			flex: 0 0 100%;
+			max-width: 308px;
+			margin: 0 auto 20px;
+		}
+	}
+	&__descr{
+		flex: 1;
+		padding:0 74px 0 30px;
+		@include respond(tab-port) {
+			flex: 0 0 100%;
+			padding: 0px;
+			order: 2;
+		}
+		&_right{
+			text-align: right;
+			padding: 0 40px 0 10px;
+			@include respond(tab-port) {
+				text-align: left;
+				padding: 0px;
+			}
+		}
+		h4{
+			margin: 0 0 30px;
+		}
+		p{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 24px;
+			color: $d-black;
+		}
+	}
+	&__video{
+		flex: 0 0 564px;
+		max-width: 564px;
+		position: relative;
+		padding-bottom: 26%;
+	    padding-top: 25px;
+	    height: 0;
+	    overflow: hidden;
+	    @include respond(desktop) {
+			flex: 0 0 358px;
+			max-width: 358px;
+			padding-bottom: 20%;
+		}
+	    @include respond(tab-land) {
+			flex: 0 0 308px;
+			max-width: 308px;
+		}
+		@include respond(tab-port) {
+			flex: 0 0 100%;
+			max-width: 100%;
+			padding-bottom: 45%;
+			margin: 0 auto 20px;
+		}
+		iframe{
+			top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+	        position: absolute;
+		}
+	}
+	&__v-descr{
+		position: absolute;
+		font-size: 24px;
+		line-height: 24px;
+		color: #FFFFFF;
+		bottom: 0;
+		padding: 30px 18px 5px;
+		left: 0;
+		width: 100%;
+		z-index: 2;
+		transition: ease all 0.5s;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,0.51+100 */
+		background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(0,0,0,0.51) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.51) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.51) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#82000000',GradientType=0 ); /* IE6-9 */
+		.information__video:hover &{
+			bottom: -100%;
+		}
+		@include respond(desktop) {
+			font-size: 20px;
+			line-height: 20px;
+		}
+		@include respond(phone-land) {
+			font-size: 16px;
+			line-height: 16px;
+		}
+	}
+}
+
+
+
+.our-shops{
+	padding: 30px 0 60px;
+	@include respond(tab-port) {
+		padding-bottom: 30px;
+	}
+	&__title{
+		margin: 0 0 40px;
+		@include respond(tab-port) {
+			margin-bottom: 20px;
+		}
+	}
+	&__row{
+		padding: 0 80px;
+		@include respond(desktop-more) {
+			padding: 0 40px;
+		}
+		@include respond(desktop) {
+			padding: 0;
+		}
+	}
+	&__item{
+		display: flex;
+		background: #fff;
+		margin-bottom: 30px;
+		border: 1px solid #E8EAEB;
+		box-sizing: border-box;
+		border-radius: 30px;
+		align-items: flex-end;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		@include mediamax(900px) {
+			flex-wrap: wrap;
+		}
+	}
+	&__image{
+		flex: 0 0 29.7%;
+		max-width: 29.7%;
+		border-radius: 15px;
+		overflow: hidden;
+		margin: 0;
+		border-radius: 20px;
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include mediamax(1320px)  {
+			flex: 0 0 20%;
+			max-width: 20%;
+		}
+		@include respond(tab-port) {
+			flex: 0 0 290px;
+			max-width: 290px;
+			margin: 0px auto;
+			padding: 20px 20px 0;
+		}
+		img{
+			max-width: none;
+			@include respond(tab-port) {
+				max-width: 100%;
+			}
+		}
+		&:before{
+			content: "";
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+			background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 2;
+			@include respond(tab-port) {
+				display: none;
+			}
+		}
+	}
+	&__descr{
+		padding: 20px;
+		flex:1 1 100%;
+		position: relative;
+		padding-right: 80px;
+		@include mediamax(900px) {
+			flex: 0 0 80%;
+			max-width: 80%;
+		}
+		@include respond(tab-port) {
+			flex: 0 0 100%;
+			max-width: 100%;
+			padding-bottom: 40px;
+			padding-right: 20px;
+		}
+		.h4{
+			margin: 0 0 22px;
+		}
+		p{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: normal;
+			color: $black;
+			margin:0 0 10px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			&.company{
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 21px;
+				color: #9A9A9A;
+				margin:0 0 20px;
+			}
+			&.opening{
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 16px;
+				text-transform: uppercase;
+				color: $orange;
+				margin:0 0 10px;
+			}
+		}
+		.social{
+			position: absolute;
+			bottom: 20px;
+			right: 10px;
+			@include mediamax(900px){
+				right: 20px;
+			}
+			@include respond(tab-port) {
+				bottom: 0;
+			}
+		}
+	}
+	&__map{
+		flex: 0 0 260px;
+		max-width: 260px;
+		height: 240px;
+		position: relative;
+		padding: 20px;
+		@include mediamax(900px) {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		iframe{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

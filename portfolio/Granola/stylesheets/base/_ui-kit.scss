@@ -1,0 +1,276 @@
+body{
+    font-family: 'Gilroy', Arial,Helvetica,sans-serif;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $d-black;
+}
+*{
+    outline: none!important;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    min-width: 320px;
+    padding: 0 150px;
+    @include respond(desktop) {
+      padding: 0 90px;
+    }
+    @include respond(tab-land) {
+      padding: 0 30px;
+    }
+    @include respond(phone-land) {
+      padding: 0 15px;
+    }
+}
+
+img{
+    max-width: 100%;
+}
+
+h2,.h2{
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 55px;
+    color: $orange;
+    text-align: center;
+    @include respond(tab-port) {
+      font-size: 30px;
+      line-height: 45px;
+    }
+    @include respond(phone-land) {
+      font-size: 25px;
+      line-height: 40px;
+    }
+}
+
+h4,.h4{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: $d-black;
+}
+
+
+a{
+    transition: ease all .3s;
+    text-decoration: none;
+    cursor: pointer;
+    color: $black;
+    &:hover{
+        text-decoration: none;
+        color: $orange;
+    }
+}
+
+.form-control:focus{
+    box-shadow:none;
+}
+
+
+/*Бургер*/
+$menu-animation-duration: 400ms;
+$menu-animation-timing:   ease-out;
+
+.burger-menu {
+  position: relative;
+  width: 30px;
+  height: 21px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  .burger-click-region {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+    &-piece{    
+        display: block;
+        position: absolute;
+        width: 100%;
+        border-top: 3px solid $black;
+        transform-origin: 50% 50%;
+        transition: transform $menu-animation-duration $menu-animation-timing;
+
+        &:nth-child(1) {
+        top: 0;
+        }
+
+        &:nth-child(2) {
+        top: 8px;
+        opacity: 1;
+        // transition: transform $menu-animation-duration $menu-animation-timing, opacity 0ms linear $menu-animation-duration / 2;
+        }
+
+        &:nth-child(3) {
+        top: 16px;
+        }
+
+        @media screen and (max-width:1200px){
+            .active & {
+            border-color:#fff;
+              &:nth-child(1) {
+                animation: burger-open-top $menu-animation-duration $menu-animation-timing forwards;
+                top:-4px;
+              }
+
+              &:nth-child(2) {
+                opacity: 0;
+                transition: transform $menu-animation-duration $menu-animation-timing, opacity 0ms linear $menu-animation-duration / 2;
+              }
+
+              &:nth-child(3) {
+                animation: burger-open-bot $menu-animation-duration $menu-animation-timing forwards;
+                top:20px;
+              }
+            }
+
+            .closing & {
+                &:nth-child(1) {
+                  animation: burger-close-top $menu-animation-duration $menu-animation-timing forwards;
+                }
+
+                &:nth-child(3) {
+                  animation: burger-close-bot $menu-animation-duration $menu-animation-timing forwards;
+                }
+            }
+        }
+    }
+}
+
+@keyframes burger-open-top {
+  50% {
+    transform: translate3d(0, 12px, 0);
+  }
+  100% {
+    transform: translate3d(0, 12px, 0) rotate(45deg);
+  }
+}
+
+@keyframes burger-open-bot {
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+  100% {
+    transform: translate3d(0, -12px, 0) rotate(-45deg);
+  }
+}
+
+@keyframes burger-close-top {
+  0% {
+    transform: translate3d(0, 12px, 0) rotate(45deg);
+  }
+  50% {
+    transform: translate3d(0, 12px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes burger-close-bot {
+  0% {
+    transform: translate3d(0, -12px, 0) rotate(-45deg);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*Стрелки*/
+
+.slick-arrow{
+    opacity: 0.7;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    display: block;
+    z-index: 1;
+    transition: ease all 0.3s;
+    .our-products-carousel &{
+        top: 0;
+        opacity: 1;
+    }
+    &.slick-prev{
+        background:rgba(203,103,32,0.7) url(../images/ico-arrow-left.svg) no-repeat;
+        background-position: center;
+        left: 60px;
+        @include respond(tab-port) {
+          left: 30px;
+        }
+        @include respond(phone-land) {
+          left: 15px;
+        }
+        .our-products-carousel & {
+            background:url(../images/ico-arrow-left-02.svg) no-repeat;
+            left: 0;
+        }
+    }
+    &.slick-next{
+        background:rgba(203,103,32,0.7) url(../images/ico-arrow-right.svg) no-repeat;
+        background-position: center;
+        right: 60px;
+        @include respond(tab-port) {
+          right: 30px;
+        }
+        @include respond(phone-land) {
+          right: 15px;
+        }
+
+        .our-products-carousel & {
+            background:url(../images/ico-arrow-right-02.svg) no-repeat;
+            right: 0;
+        }
+    }
+    &:before{
+        display: none;
+    }
+    &:hover,
+    &:focus{
+        background-color: rgba(203,103,32,1);
+    }
+    &.slick-disabled{
+        background-color: rgba(203,103,32,0.7);
+        &::before{
+            opacity: 0.7;
+        }
+    }
+}
+
+.slick-dots{
+    bottom: 0;
+    margin: 0;
+    padding:30px 20px 20px;
+    .image-carousel & {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,0.51+100 */
+        background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(0,0,0,0.51) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.51) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.51) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#82000000',GradientType=0 ); /* IE6-9 */
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        overflow: hidden;
+    }
+    li{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #fff;
+        margin: 0 8px;
+        &.slick-active{
+            background: $orange;
+        }
+    }
+}
+

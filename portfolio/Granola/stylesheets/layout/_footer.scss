@@ -1,0 +1,139 @@
+.footer{
+	padding: 0 0 10px;
+	background: #fff;
+	&__row{
+		display: flex;
+		align-items: center;
+	    padding: 20px 12px 25px;
+	    flex-wrap: wrap;
+	    .footer_border-green & {
+	    	border-top: 1px solid $green;
+	    }
+	    .footer_border-grey & {
+	    	border-top: 1px solid #CDCDCD;;
+	    }
+	    @include respond(tab-land) {
+	      padding: 10px 0 25px;
+	    }
+	}
+	&__logo{
+		margin-right: 87px;
+		@include respond(tab-land) {
+	     	margin-right: 50px;
+	    }
+	    @include mediamax(700px) {
+	    	margin-right: 10px;
+	    }
+	    @include mediamax(660px) {
+			margin: 0 auto;
+		}
+	}
+	&__contacts{
+		padding-top: 20px;
+		@include mediamax(660px) {
+			width: 100%;
+			flex: 0 0 100%;
+			text-align: center;
+	    }
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			li{
+				margin-bottom: 13px;
+				a{
+					color: $o-black;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 24px;
+					color: #3F3D3D;
+					&:hover{
+						color: $orange;
+					}
+				}
+			}
+		}
+	}
+	&__social{
+		margin-left: auto;
+		@include mediamax(660px) {
+			margin: 0 auto;
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			li{
+				margin-left: 9px;
+				@include mediamax(660px) {
+					margin: 0 4px;
+				}
+				a{
+					background: $orange;
+					border-radius: 8px;
+					width: 36px;
+					height: 36px;
+					flex: 0 0 36px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					&:hover{
+						opacity: 0.7;
+					}
+				}
+			}
+		}
+	}
+	&__footnote{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 15px;
+		color: $grey;
+		text-align: center;
+		@include respond(tab-land) {
+	      padding: 0 100px;
+	    }
+	    @include respond(phone-land) {
+	    	padding: 0 50px;
+	    }
+	    @include respond(phone) {
+	    	padding: 0;
+	    }
+	}
+}
+
+.contacts{
+	&__link{
+		display: flex;
+		align-items: center;
+		color: $o-black;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+		color: #3F3D3D;
+		path{
+			transition: ease all 0.3s;
+		}
+		&:hover{
+			color: $orange;
+			path{
+				fill: $orange;
+			}
+		}
+	}
+	&__icon{
+		width: 20px;
+		flex: 0 0 20px;
+		height: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 14px;
+	}
+}

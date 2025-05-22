@@ -1,0 +1,25 @@
+input::-moz-placeholder { opacity: 1; font-size: 16px; color: #B69978; }
+input::placeholder {opacity: 1; font-size: 16px; color: #B69978; }
+input::-o-placeholder {opacity: 1; font-size: 16px; color: #B69978; }
+input::-webkit-input-placeholder {opacity: 1; font-size: 16px; color: #B69978; }
+input:-ms-input-placeholder {opacity: 1; font-size: 16px; color: #B69978; }
+
+textarea::-moz-placeholder { opacity: 1; font-size: 16px; color: #B69978; }
+textarea::placeholder {opacity: 1; font-size: 16px; color: #B69978; }
+textarea::-o-placeholder {opacity: 1; font-size: 16px; color: #B69978; }
+textarea::-webkit-input-placeholder {opacity: 1; font-size: 16px; color: #B69978; }
+textarea:-ms-input-placeholder {opacity: 1; font-size: 16px; color: #B69978; }
+
+input:focus::-moz-placeholder { opacity: 0!important;outline: none;}
+input:focus::placeholder { opacity: 0!important;outline: none;}
+input:focus::-o-placeholder { opacity: 0!important;outline: none;}
+input::focus::-webkit-input-placeholder  { opacity: 0!important;outline: none;}
+input:focus:-ms-input-placeholder { opacity: 0!important;outline: none;}
+
+textarea:focus::-moz-placeholder { opacity: 0!important;outline: none;}
+textarea:focus::placeholder { opacity: 0!important;outline: none;}
+textarea:focus::-o-placeholder { opacity: 0!important;outline: none;}
+textarea::focus::-webkit-input-placeholder  { opacity: 0!important;outline: none;}
+textarea:focus:-ms-input-placeholder { opacity: 0!important;outline: none;}
+
+

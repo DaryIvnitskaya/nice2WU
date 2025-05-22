@@ -1,0 +1,180 @@
+.product-page{
+	padding: 40px 0 70px;
+	@include respond(tab-port) {
+		padding: 30px 0;
+	}
+	&__title{
+		margin: 0 0 20px;
+	}
+	&__row{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__col{
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+		padding: 0 30px;
+		@include respond(tab-land) {
+			padding: 0 10px;
+		}
+		@include respond(tab-port) {
+			flex: 0 0 100%;
+			max-width: 100%;
+			order:-1;
+			margin-bottom: 30px;
+		}
+		&_right{
+			text-align: right;
+			@include respond(phone-land) {
+				text-align: left;
+			}
+		}
+	}
+
+	&__properties{
+		@include respond(tab-port) {
+			flex: 0 0 50%;
+			max-width: 50%;
+			order:3;
+			margin-bottom: 0;
+		}
+		@include respond(phone-land) {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+	&__weight{
+		text-align: center;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #313333;
+		margin-bottom: 14px;
+	}
+	&__image{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 247px;
+		margin: 0 auto;
+	}
+}
+
+.properties{
+	padding-top: 90px;
+	@include respond(tab-port) {
+		padding: 0;
+	}
+	&__useful{
+		margin-bottom: 20px;
+		@include respond(tab-port) {
+			min-height: 150px;
+			margin-bottom: 0;
+		}
+		@include respond(phone-land) {
+			min-height: auto;
+			margin-bottom: 20px;
+		}
+	}
+	&__formats{
+		margin-bottom: 50px;
+		@include respond(tab-port) {
+			min-height: 150px;
+			margin-bottom: 0;
+		}
+		@include respond(phone-land) {
+			min-height: auto;
+			margin-bottom: 20px;
+		}
+	}
+	&__flavours{
+		padding-left: 40px;
+		@include respond(desktop) {
+			padding-left: 0;
+		}
+		@include respond(phone-land) {
+			margin-bottom: 20px;
+		}
+	}
+	&__ingredients{
+		padding-right: 40px;
+		@include respond(desktop) {
+			padding-right: 0;
+		}
+	}
+	&__title{
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 16px;
+		text-transform: uppercase;
+		color: $orange;
+		margin: 0 0 27px;
+		@include respond(phone-land) {
+			margin-bottom: 20px;
+		}
+		.properties__flavours &{
+			margin-bottom: 5px;
+			@include respond(phone-land) {
+				margin-bottom: 20px;
+			}
+		}
+		.properties__formats &{
+			margin-bottom: 20px;
+			@include respond(tab-port) {
+				margin-bottom: 50px;
+			}
+			@include respond(phone-land) {
+				margin-bottom: 20px;
+			}
+		}
+		.properties__ingredients &{
+			margin-bottom: 5px;
+			@include respond(phone-land) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	&__row{
+		display: flex;
+		.product-page__col_right &{
+			justify-content: flex-end;
+			@include respond(phone-land) {
+				justify-content: flex-start;
+			}
+		}
+	}
+	&__col{
+		margin:0 18px 0 0;
+		.properties__formats & {
+			margin-right: 30px;
+		}
+		.product-page__col_right &{
+			margin: 0 0 0 18px;
+			@include respond(phone-land) {
+				margin: 0 18px 0 0;
+			}
+		}
+	}
+	&__icon{
+		margin-bottom: 10px;
+		text-align: center;
+		.properties__formats & {
+			margin-bottom: 5px;
+		}
+	}
+	&__text{
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+		text-transform: capitalize;
+		color: #949494;
+		text-align: center;
+	}
+	&__descr{
+		font-size: 16px;
+		line-height: 24px;
+		color: $d-black;
+	}
+}
