@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<script src="js/jquery-1.11.3.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+	<meta name="keywords" content="сайт, разработка, верстка, Северодонецк, страница, посадочная страница, lending page">
+	<meta name="description" content="Nice to work with you.">
+	<meta property="og:image" content="/img/logo.png"> 
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+
+    <title>web development | html/css development</title>
+    
+	<script src="https://use.fontawesome.com/661e91f447.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+
+    <link href="img/favicon.png" rel="icon">
+
+    <!--  iPhone Web App Home Screen Icon -->
+<!-- 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon.png">
+	<link rel="apple-touch-icon" href="img/favicon.png"> -->
+    
+    <!-- Общие стили -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/portfolio-effect.css">
+    <link rel="stylesheet" href="css/loader-effect.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="overflow: hidden; height: 100%;">
+	<div class="video-bg">
+		<video  src="img/video/video-01.mp4" preload="auto" autoplay="true" loop="true" muted="muted"></video>
+	</div>
+	<script>
+		history.pushState('', document.title, window.location.pathname+window.location.search);
+	</script>
+	
+	<div class="loader animation">
+		<div class="loader_inner">
+		</div>
+	</div>    
+	<script>
+		$(window).load(function() {
+			$(".loader_inner").fadeOut();
+			$(".loader").delay(1000).fadeOut("slow");
+
+			setTimeout(function () {
+			    $(".first-screen").addClass("animation-delay").delay(1000);
+			    	var offset = $('#section2').offset(); 
+			}, 1000);
+		});
+	</script> 
+	
+	<header class="header">
+	    <div class="wrapper">
+	        <div class="header__list">
+	            <div class="header__logo">
+	            	<!-- Nice2WU -->
+	            	<img src="img/logo.png" alt="Nice2WU" width="70">
+	            </div>
+	            <div class="header__email">
+	            	<a href="mailto:d.nice2wu@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>d.nice2wu@gmail.com</span></a>
+	            </div>
+	            <!-- <div class="header__call">
+	            	<a href="tel:+380997030799"><i class="fa fa-phone" aria-hidden="true"></i> <span>+380 99-70-30-799</span></a>
+	            </div> -->
+	            <div class="header__burger">
+					<div class="burger-menu">
+					    <div class="burger-click-region">
+					      <span class="burger-menu-piece"></span>
+					      <span class="burger-menu-piece"></span>
+					      <span class="burger-menu-piece"></span>
+					    </div>
+					    <div class="mobile-menu">
+							<div class="header__nav">
+				                <ul>
+				                    <li><a href="#home" onclick="$('.burger-menu').removeClass('is-open');$('.burger-click-region,.fullpage-wrapper').removeClass('active');" class="first-screen__link">Home</a></li>
+				                    <li><a href="#portfolio" onclick="$('.burger-menu').removeClass('is-open');$('.burger-click-region,.fullpage-wrapper').removeClass('active');" class="portfolio__link">Portfolio</a></li>
+				                    <li><a href="#contacts" onclick="$('.burger-menu').removeClass('is-open');$('.burger-click-region,.fullpage-wrapper').removeClass('active');" class="contacts__link">Contacts</a></li>
+				                </ul>
+				            </div>
+				            <div class="mobile-menu__contacts">
+				            	<a href="mailto:d.nice2wu@gmail.com">d.nice2wu@gmail.com</a>
+				            	<!-- <a href="tel:+380997030799">+380 99-70-30-799</a> -->
+				            	<div class="mobile-menu__social">
+				                	<ul>
+				                		<li><a target="_blank" href="https://tele.click/@dariyaivnitskaya"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+				                		<!-- <li><a target="_blank" href="https://wa.me/380999783164"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li> -->
+				                		<li><a target="_blank" href="skype:destiny7610?chat"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+				                	</ul>
+				                </div>
+				            </div>
+						</div>
+				    </div>
+				</div>
+	        </div>
+	    </div>
+	</header>
+
+	<section id="fullpage">
+		<!-- FIRST SCREEN -->
+	    <div data-anchor="home" style="height: 915px;" class="section first-screen">
+	        <div class="wrapper">
+	        	<h3>DEVELOPMENT</h3>
+	            <div class="first-screen__box">
+	                <div class="first-screen__box-title">
+	                    HELLO EVERYONE
+	                </div><br>
+	                <div class="first-screen__box-subtitle">
+	                    I'm HTML developer
+	                </div>
+	                <div class="first-screen__box-btn">
+	                	<a href="#contacts"><span>Write me</span></a>
+	                </div>
+	            </div>
+	            <div class="first-screen__social">
+                	<ul>
+                		<li><a target="_blank" href="https://tele.click/@dariyaivnitskaya"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                		<!-- <li><a target="_blank" href="https://wa.me/380999783164"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li> -->
+                		<li><a target="_blank" href="skype:destiny7610?chat"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                	</ul>
+                </div>
+	            <div class="btn-anchor">
+		            <a href="#portfolio"><span></span>SCROLL</a>
+		        </div>
+	        </div>
+	    </div>
+	    <!-- PORTFOLIO -->
+	    <div data-anchor="portfolio" class="section portfolio">
+	    	<div class="portfolio__bg"></div>
+	        <div class="portfolio__flex">
+	        	<div class="portfolio__title">
+	        	    <div class="title-box">
+	        	    	<span class="sm">Page layout</span> <span class="lg">Big projects</span> <span class="md">One page</span> <span class="sm">Newsletter</span> <span class="md">Page Support</span> <span class="sm">Change text and image</span> <span class="lg">Landing page</span> <span class="sm">Website creation</span> <span class="sm">Add logo</span> <span class="md">Help on the site</span> <span class="sm">Correct site on Bitrix24</span>
+	        	    </div>
+	        	</div>
+		        <div class="portfolio__list">
+		        	 <div class="portfolio__box" style="background-image: url('img/portfolio/img-26.jpg')">
+		                 <div class="ih-item square colored effect6 from_top_and_bottom">
+		                     <div class="title">
+		                     	<h3>Granola</h3>
+								<h4>Adaptive design</h4>
+		                     </div>
+		                     <div class="info">
+		                       <h3>Granola</h3>
+		                       <ul>
+		                           <li>
+		                                <a href="portfolio/Granola/index.html" target="_blank">Home page</a>
+		                            </li>
+	                                <li>
+	                                	<a href="portfolio/Granola/our-products.html" target="_blank">Our products</a>
+	                                </li>
+	                                <li>
+	                                	<a href="portfolio/Granola/our-shops.html" target="_blank">Our shops</a>
+	                                </li>
+	                                <li>
+	                                	<a href="portfolio/Granola/product-page.html" target="_blank">Product page</a>
+	                                </li>
+	                                <li>
+	                                	<a href="portfolio/Granola/quality.html" target="_blank">Quality</a>
+	                                </li>
+		                       </ul>
+		                     </div>
+		                 </div>
+		             </div>
+		             <div class="portfolio__box" style="background-image: url('img/portfolio/img-24.jpg')">
+		                 <div class="ih-item square colored effect6 from_top_and_bottom">
+		                     <div class="title">
+		                     	<h3>Facebook competition</h3>
+								<h4>Adaptive design</h4>
+		                     </div>
+		                     <div class="info">
+		                       <h3>Facebook competition</h3>
+		                       <ul>
+		                           <li>
+		                               <a href="portfolio/facebook_competition/participate.html" target="_blank">Participate</a>
+		                           </li>
+		                           <li>
+		                               <a href="portfolio/facebook_competition/register.html" target="_blank">Register</a>
+		                           </li>
+		                           <li>
+		                               <a href="portfolio/facebook_competition/non-winner.html" target="_blank">Non winner</a>
+		                           </li>
+		                           <li>
+		                               <a href="portfolio/facebook_competition/how-it-works.html" target="_blank">How it works</a>
+		                           </li>
+		                           <li>
+		                               <a href="portfolio/facebook_competition/insert-code.html" target="_blank">Insert code</a>
+		                           </li>
+		                       </ul>
+		                     </div>
+		                 </div>
+		             </div>
+		             <div class="portfolio__box" style="background-image: url('img/portfolio/img-22.jpg')">
+		                 <div class="ih-item square colored effect6 from_top_and_bottom">
+		                     <div class="title">
+		                     	<h3>Newsletter</h3>
+								<h4>Adaptive design</h4>
+		                     </div>
+		                     <div class="info">
+		                       <!-- <h3>Newsletter</h3> -->
+		                       <ul>
+		                           <li>
+		                                 <a href="portfolio/newsletter/index.html" target="_blank">Newsletter</a>
+		                           </li>
+		                       </ul>
+		                     </div>
+		                 </div>
+		             </div>
+		            <div class="portfolio__box" style="background-image: url('img/portfolio/img-17.jpg')">
+		                 <div class="ih-item square colored effect6 from_top_and_bottom">
+		                     <div class="title">
+		                     	<h3>Landing Page for Naawel</h3>
+								<h4>Adaptive design</h4>
+		                     </div>
+		                     <div class="info">
+		                       <h3>Landing Page for Naawel</h3>
+		                       <ul>
+		                           <li>
+		                               <a href="portfolio/Naawel" target="_blank">Adaptive design</a>
+		                           </li>
+		                       </ul>
+		                     </div>
+		                 </div>
+		             </div>
+		        </div>
+	        </div>
+	    </div>
+	    <!-- PORTFOLIO -->
+		<div data-anchor="second-portfolio" class="section portfolio">
+	    	<div class="portfolio__bg"></div>
+	        <div class="portfolio__flex">
+	        	<div class="portfolio__title">
+	        	    <div class="title-box">
+	        	    	<span class="sm">less</span> <span class="lg">HTML</span> <span class="sm">Git</span> <span class="md">bootstrap</span> <span class="sm">flexbox</span> <span class="md">Adaptive design</span> <span class="sm">Cross-browser compatibility</span> <span class="lg">CSS</span> <span class="sm">Photoshop</span> <span class="sm">Methodology / BEM</span> <span class="md">SCSS</span> <span class="sm">Bitrix24</span>
+	        	    </div>
+	        	</div>
+		        <div class="portfolio__list">
+		        	<div class="portfolio__box" style="background-image: url('img/portfolio/img-27.jpg')">
+		                 <div class="ih-item square colored effect6 from_top_and_bottom">
+		                     <div class="title">
+		                     	<h3>Game - Boss Royal</h3>
+								<h4>Adaptive design</h4>
+		                     </div>
+		                     <div class="info">
+		                       <h3>Game - Boss Royal</h3>
+		                       <ul>
+		                           <li>
+		                               <a href="portfolio/boss-royal/index.html" target="_blank">Sing in</a>
+		                           </li>
+		                           <li>
+		                           		<a href="portfolio/boss-royal/home.html" target="_blank">Player choice</a>
+		                           </li>
+		                           <li>
+		                           		<a href="portfolio/boss-royal/game.html" target="_blank">Field of play</a>
+		                           </li>
+		                       </ul>
+		                     </div>
+		                 </div>
+		             </div>
+		             <div class="portfolio__box" style="background-image: url('img/portfolio/img-13.jpg')">
+		                 <div class="ih-item square colored effect6 from_top_and_bottom">
+		                     <div class="title">
+		                     	<h3>CSSpot</h3>
+								<h4>Adaptive design</h4>
+		                     </div>
+		                     <div class="info">
+		                       <h3>CSSpot</h3>
+		                       <ul>
+		                           <li>
+		                               <a href="portfolio/CSSpot/main.html" target="_blank">Main page</a>
+		                           </li>
+		                           <li>
+		                               <a href="portfolio/CSSpot/music.html" target="_blank">Music</a>
+		                           </li>
+		                           <li>
+		                               <a href="portfolio/CSSpot/weapon.html" target="_blank">Cart item</a>
+		                           </li>
+		                           <li>
+		                               <a href="portfolio/CSSpot/skins.html" target="_blank">Showcase</a>
+		                           </li>
+		                       </ul>
+		                     </div>
+		                 </div>
+		             </div>
+		             <div class="portfolio__box" style="background-image: url('img/portfolio/img-14.jpg')">
+		                 <div class="ih-item square colored effect6 from_top_and_bottom">
+		                     <div class="title">
+		                     	<h3>Tokens Daily</h3>
+								<h4>Adaptive design</h4>
+		                     </div>
+		                     <div class="info">
+		                       <h3>Online store</h3>
+		                       <ul>
+		                           <li>
+		                               <a href="portfolio/TD/main-page.html" target="_blank">Main page</a>
+		                           </li>
+		                           <li>
+		                               <a href="portfolio/TD/Authors.html" target="_blank">Author</a>
+		                           </li>
+		                           <li>
+		                               <a href="portfolio/TD/calendar.html" target="_blank">The calendar</a>
+		                           </li>
+		                           <li>
+		                               <a href="portfolio/TD/category.html" target="_blank">Categories</a>
+		                           </li>
+		                       </ul>
+		                     </div>
+		                 </div>
+		             </div>
+		              <div class="portfolio__box" style="background-image: url('img/portfolio/img-23.jpg')">
+		                 <div class="ih-item square colored effect6 from_top_and_bottom">
+		                     <div class="title">
+		                     	<h3>Website redesign CityCard.guru</h3>
+								<h4>Adaptive design</h4>
+		                     </div>
+		                     <div class="info">
+		                       <h3>Online store</h3>
+		                       <ul>
+		                           <li>
+		                               <a href="https://citycard.guru/" target="_blank">Main page and other</a>
+		                           </li>
+		                       </ul>
+		                     </div>
+		                 </div>
+		             </div>
+		        </div>
+	        </div>
+	    </div>
+	    <!-- CONTACTS -->
+	    <div data-anchor="contacts" class="section contacts">
+	    	<div class="wrapper">
+	    		<div class="contacts__box">
+	                <div class="contacts__left">
+	                	<div class="contacts__title">
+		                	<h2>Contacts</h2>
+		                </div>
+		                <div class="contacts__info">
+		                	<div class="animation__text"></div>
+		                	<div>
+		                		<a href="mailto:d.nice2wu@gmail.com">d.nice2wu@gmail.com</a>
+		                	</div>
+		                	<div>
+		                		<a target="_blank" href="https://www.linkedin.com/in/dariya-ivnitskaya-a80bb1109/">profile on LinkedIn</a>
+		                	</div>
+		                </div>
+		                <div class="contacts__social">
+		                	<ul>
+		                		<li><a target="_blank" href="https://tele.click/@dariyaivnitskaya"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+		                		<!-- <li><a target="_blank" href="https://wa.me/380999783164"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li> -->
+		                		<li><a target="_blank" href="skype:destiny7610?chat"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+		                	</ul>
+		                </div>
+					</div>
+                    <!-- <div class="contacts__right">
+						<div class="contacts__form">
+							<div class="input">
+								<label for="form_name">Your name</label>
+								<input type="text" name="name" required="" id="form_name">
+								<div id="form_result"></div>
+							</div>
+							<div class="input">
+								<label for="form_email">E-mail</label>
+								<input type="email" name="email" required="" id="form_email">
+							</div>
+							<div class="input">
+								<label for="form_message">Your message</label>
+								<textarea id="form_message" name="text_comment" required=""></textarea>
+							</div>
+							<div class="messages"></div>
+							<div class="contacts__btn">
+								<input class="btn btn-default btn-yellow" type="submit" name="btn_submit" id="button_contacts" value="Send a message">
+							</div>
+						</div>
+	                </div> -->
+	            </div>
+	    	</div>
+
+	    	<footer class="footer">
+	    		<img src="img/logo.png" alt="Nice2WU" width="50">
+	    	</footer>
+	    </div> 
+	</section>
+	<script src="js/animation.js"></script>
+	<script src="js/font-awesome.js"></script>
+	<script src="js/engineer.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/parallax_02.js"></script>
+	<script src="js/parallax_03.js"></script>
+   	<script>
+     $(document).ready(function(){
+            $('#button_contacts').click(function(){
+                var form_name   = $('#form_name').val();
+                var form_email   = $('#form_email').val();
+                var form_message = $('#form_message').val();
+                $.ajax({
+                    url: "post.php", 
+                    type: "post", 
+                    dataType: "json", 
+                    data: { 
+                        "form_name":   form_name,
+                        "form_email":   form_email,
+                        "form_message": form_message
+                    },
+                    success: function(data){
+                        $('.messages').html(data.result); 
+                    }
+                });
+            });
+        });
+   	</script> 
+	<script>
+	    
+	    $(document).ready(function() {
+       
+	        // if (jQuery.browser.mobile==true) $('html').addClass('mbl-browser');
+   
+	    });
+	    var thisSlideIndex = 1,
+	    sliding = false;
+
+	    $(document).ready(function() {
+	        $('#fullpage').fullpage({
+        		anchors: ['home', 'portfolio', 'second-portfolio', 'contacts'],
+	            autoScrolling:true,
+	            scrollingSpeed: 1200,
+	            fitToSection: true,
+	            verticalCentered: false,
+	            responsive: 768,
+	            responsiveHeight: 600,
+	            responsiveWidth: 768,
+	            scrollBar: false,
+				afterLoad: function(origin, destination, direction){
+
+					var loadedSection = this;
+					
+				}
+	        });
+	    });
+	</script>
+<!-- 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+</body>
+</html>
