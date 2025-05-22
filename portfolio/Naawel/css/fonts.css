@@ -1,0 +1,24 @@
+@font-face {
+ font-family: "SF-Pro-Display";
+ src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+        url("../fonts/SFProDisplay-Regular.woff") format("woff"),
+        url("../fonts/SFProDisplay-Regular.ttf") format("ttf"),
+        url("../fonts/SFProDisplay-Regular.eot") format("eot");
+}
+
+@font-face {
+ font-family: "All-Round-Gothic";
+ src: url("../fonts/All Round Gothic W03 Book.woff") format("woff"),
+        url("../fonts/All Round Gothic W03 Book.ttf") format("ttf"),
+        url("../fonts/All Round Gothic W03 Book.eot") format("eot"),
+        url("../fonts/All Round Gothic W03 Book.otf") format("otf");
+}
+
+@font-face {
+ font-family: "All-Round-Gothic-Medium";
+ src: url("../fonts/All Round Gothic W03 Medium.woff") format("woff"),
+ 		url("../fonts/All Round Gothic W03 Medium.woff2") format("woff2"),
+        url("../fonts/All Round Gothic W03 Medium.ttf") format("ttf"),
+        url("../fonts/All Round Gothic W03 Medium.eot") format("eot"),
+        url("../fonts/All Round Gothic W03 Medium.otf") format("otf");
+}

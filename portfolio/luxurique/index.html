@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Luxurique</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/vue-airbnb-style-datepicker@latest/dist/vue-airbnb-style-datepicker.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.29.0/date_fns.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-top__row">
+					<ul>
+						<li><a href="">Login</a></li>
+						<li>|</li>
+						<li><a href="">Sign up</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<div class="header__row">
+					<div class="header__logo">
+						<a href="/" title="Luxurique">
+							<img src="images/logo.svg" alt="Luxurique">
+							<img src="images/logo_b.svg" alt="Luxurique">
+							<span>Your Japan Inspiration</span>
+						</a>
+					</div>
+
+					<div class="header__nav">
+						<ul>
+							<li class="destination-nav">
+								<a href="javascript:void(0);" title="Destination">Destination</a>
+								<div class="mega-menu">
+									<div class="mega-menu__img">
+										<img src="images/demo/tokyo.jpeg" alt="">
+									</div>
+									<div class="mega-menu-items">
+										<div class="mega-menu-items__row">
+											<div class="mega-menu-items__col">
+												<h5>Kanto</h5>
+												<ul>
+						  							<li>
+						  								<a href="#"><span>Tokyo</span></a>
+						  								<img src="images/demo/tokyo.jpeg" alt="" style="opacity: 1;">
+						  							</li>
+						  							<li>
+						  								<a href="#"><span>Hakone</span></a>
+						  								<img src="images/demo/hakone.jpg" alt="">
+						  							</li>
+						  							<li>
+						  								<a href="#"><span>Tochigi</span></a>
+						  								<img src="images/demo/tochigi.jpg" alt="">
+						  							</li>
+						  							<li>
+						  								<a href="#"><span>Yokohama</span></a>
+						  								<img src="images/demo/tokyo.jpeg" alt="">
+						  							</li>
+						  							<li>
+						  								<a href="#"><span>Chiba</span></a>
+						  								<img src="images/demo/tokyo.jpeg" alt="">
+						  							</li>
+						  							<li><a href="#" class="view-all"><span>View All</span></a></li>
+				  								</ul>
+											</div>
+											<div class="mega-menu-items__col">
+												<h5>Kansai</h5>
+												<ul>
+                                                    <li>
+														<a href="#"><span>Kyoto</span></a>
+														<img src="images/demo/kyoto.jpeg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Osaka</span></a>
+														<img src="images/demo/osaka.jpeg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Hyogo</span></a>
+														<img src="images/demo/hyogo.jpg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Shiga</span></a>
+														<img src="images/demo/kyoto.jpeg" alt="">
+													</li>
+                                                    <li>
+														<a href="#"><span>Wakayama</span></a>
+														<img src="images/demo/kyoto.jpeg" alt="">
+													</li>
+			
+													<li><a href="#" class="view-all"><span>View All</span></a></li>
+												</ul>
+											</div>
+
+											<div class="mega-menu-items__col">
+												<h5>Kyushu</h5>
+												<ul>
+													<li>
+														<a href="#"><span>Fukuoka</span></a>
+														<img src="images/demo/fukuoka.jpg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Nagasaki</span></a>
+														<img src="images/demo/nagasaki.jpeg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Kumamoto</span></a>
+														<img src="images/demo/kumamoto.jpeg" alt="">
+													</li>
+                                                     <li>
+                                                    <a href="#"><span>Kagoshima</span></a>
+														<img src="images/demo/fukuoka.jpeg" alt="">
+													</li>
+                                                     <li>
+                                                    <a href="#"><span>Okinawa</span></a>
+														<img src="images/demo/fukuoka.jpeg" alt="">
+													</li>
+													<li><a href="#" class="view-all"><span>View All</span></a></li>
+												</ul>
+											</div>
+											<div class="mega-menu-items__col">
+												<h5>Tohoku</h5>
+												<ul>
+													<li>
+														<a href="#"><span>Aomori</span></a>
+														<img src="images/demo/aomori.jpeg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Iwate</span></a>
+														<img src="images/demo/iwate.jpeg" alt="">
+													</li>
+                                                    <li>
+														<a href="#"><span>Miyagi</span></a>
+														<img src="images/demo/miyagi.jpeg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Akita</span></a>
+														<img src="images/demo/aomori.jpeg" alt="">
+													</li>
+                                                    <li>
+														<a href="#"><span>Yamagata</span></a>
+														<img src="images/demo/aomori.jpeg" alt="">
+													</li>
+
+													<li><a href="#" class="view-all"><span>View All</span></a></li>
+												</ul>
+											</div>
+											<div class="mega-menu-items__col">
+												<h5>Others</h5>
+												<ul>
+													<li>
+														<a href="#"><span>Hokkaido</span></a>
+														<img src="images/demo/hokkaido.jpg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Shikoku</span></a>
+														<img src="images/demo/shikoku.jpg" alt="">
+													</li>
+                                                    <li>
+														<a href="#"><span>Kinki</span></a>
+														<img src="images/demo/hokkaido.jpg" alt="">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="artisan-nav">
+								<a href="#" title="Artisan Activities">Artisan Activities</a>
+								<div class="mega-menu">
+									<div class="mega-menu__img">
+										<img src="images/demo/tokyo.jpeg" alt="">
+									</div>
+									<div class="mega-menu-items">
+										<div class="mega-menu-items__row">
+											<div class="mega-menu-items__col">
+												<h5>Paper categ</h5>
+												<ul>
+						  							<li>
+						  								<a href="#"><span>Paper activity 001</span></a>
+						  								<img src="images/demo/paper-001-istockphoto-1129108381-612x612.jpeg" alt="" style="opacity: 1;">
+						  							</li>
+						  							<li>
+						  								<a href="#"><span>Paper activity 002</span></a>
+						  								<img src="images/demo/paper-002-istockphoto-816840896-612x612.jpeg" alt="">
+						  							</li>
+						  							<li>
+						  								<a href="#"><span>Paper activity 003</span></a>
+						  								<img src="images/demo/paper-003-istockphoto-816840896-612x612.jpeg" alt="">
+						  							</li>
+						  							<li>
+						  								<a href="#"><span>Paper activity 004</span></a>
+						  								<img src="images/demo/paper-001-istockphoto-1129108381-612x612.jpeg" alt="">
+						  							</li>
+						  							<li>
+						  								<a href="#"><span>aper activity 005</span></a>
+						  								<img src="images/demo/paper-003-istockphoto-816840896-612x612.jpeg" alt="">
+						  							</li>
+						  							<li><a href="#" class="view-all"><span>View All</span></a></li>
+				  								</ul>
+											</div>
+											<div class="mega-menu-items__col">
+												<h5>Metal categ</h5>
+												<ul>
+                                                    <li>
+														<a href="#"><span>Metal activity 001</span></a>
+														<img src="images/demo/metal-001-istockphoto-1324173382-612x612.jpeg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Metal activity 002</span></a>
+														<img src="images/demo/metal-002-istockphoto-1324173382-612x612.jpeg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Metal activity 003</span></a>
+														<img src="images/demo/metal-003-istockphoto-1324173382-612x612.jpeg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Metal activity 004</span></a>
+														<img src="images/demo/metal-001-istockphoto-1324173382-612x612.jpeg" alt="">
+													</li>
+                                                    <li>
+														<a href="#"><span>Metal activity 005</span></a>
+														<img src="images/demo/metal-002-istockphoto-1324173382-612x612.jpeg" alt="">
+													</li>
+			
+													<li><a href="#" class="view-all"><span>View All</span></a></li>
+												</ul>
+											</div>
+
+											<div class="mega-menu-items__col">
+												<h5>Ceramics Categ</h5>
+												<ul>
+													<li>
+														<a href="#"><span>Ceramics activity 001</span></a>
+														<img src="images/demo/ceramics-001-istockphoto-1126623592-612x612.jpeg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Ceramics activity 002</span></a>
+														<img src="images/demo/ceramics-002-istockphoto-1308083568-612x612.jpeg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Ceramics activity 003</span></a>
+														<img src="images/demo/ceramics-003-istockphoto-1126623592-612x612.jpeg" alt="">
+													</li>
+                                                     <li>
+                                                    <a href="#"><span>Ceramics activity 004</span></a>
+														<img src="images/demo/ceramics-001-istockphoto-1126623592-612x612.jpeg" alt="">
+													</li>
+                                                     <li>
+                                                    <a href="#"><span>Ceramics activity 005</span></a>
+														<img src="images/demo/ceramics-002-istockphoto-1308083568-612x612.jpeg" alt="">
+													</li>
+													<li><a href="#" class="view-all"><span>View All</span></a></li>
+												</ul>
+											</div>
+											<div class="mega-menu-items__col">
+												<h5>Othersu</h5>
+												<ul>
+													<li>
+														<a href="#"><span>Other act 001</span></a>
+														<img src="images/demo/aomori.jpeg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Other act 002</span></a>
+														<img src="images/demo/iwate.jpeg" alt="">
+													</li>
+                                                    <li>
+														<a href="#"><span>Other act 003</span></a>
+														<img src="images/demo/miyagi.jpeg" alt="">
+													</li>
+													<li>
+														<a href="#"><span>Other act 004</span></a>
+														<img src="images/demo/aomori.jpeg" alt="">
+													</li>
+                                                    <li>
+														<a href="#"><span>Other act 005</span></a>
+														<img src="images/demo/aomori.jpeg" alt="">
+													</li>
+
+													<li><a href="#" class="view-all"><span>View All</span></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#" title="Interest">Interest</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header__burger">
+						<div class="burger-menu">
+							<div class="burger-click-region">
+								<span class="burger-menu-piece"></span>
+								<span class="burger-menu-piece"></span>
+								<span class="burger-menu-piece"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</header>
+	<!-- HEADER END -->
+
+	<!-- GENERAL BANNER -->
+	<div class="general-banner-border">
+		<section class="general-banner">
+			<div class="general-banner__item">
+				<div class="general-banner__image">
+					<div class="general-banner__img" style="background-image: url(images/hero-image.jpg);"></div>
+					<div class="general-banner__anchor">
+						<a class="anchors" href="#best-seller"></a>
+					</div>
+				</div>
+				<div class="wrapper">
+					<h3>Your travel partner in Japan</h3>
+					<h1>Find Artisan Experiences</h1>
+					<form action="" class="general-form" id="app">
+						<label for="">
+							<input class="general-form__drop general-form__drop_2" type="text" placeholder="Search Destinations">
+							<div class="general-form__dropdown general-form__dropdown_2">
+								<ul>
+									<li><a href="#">Tokyo</a></li>
+									<li><a href="#">Kyoto</a></li>
+									<li><a href="#">Sapporo</a></li>
+									<li><a href="#">Osaka</a></li>
+									<li><a href="#">Fukuoka</a></li>
+									<li><a href="#">Nagoya</a></li>
+								</ul>
+							</div>
+						</label>
+						<label for="">
+							<input class="general-form__drop general-form__drop_1" type="text" placeholder="Search Activities">
+							<div class="general-form__dropdown general-form__dropdown_1">
+								<ul>
+									<li><a href="#">Paper activity</a></li>
+									<li><a href="#">Metal Activity</a></li>
+									<li><a href="#">Ceramic Ativity</a></li>
+									<li><a href="#">Wood Activity</a></li>
+									<li><a href="#">Food Activity</a></li>
+								</ul>
+							</div>
+						</label>
+						<label for="" class="datepicker-trigger">
+							<input type="text" id="datepicker-input-trigger" :value="formatDates(inputDateOne, inputDateTwo)" placeholder="Date"/>
+							<airbnb-style-datepicker
+				            :trigger-element-id="'datepicker-input-trigger'"
+				            :mode="'range'"
+				            :date-one="buttonDateOne"
+				            :date-two="buttonDateTwo"
+				            :min-date="'2018-02-28'"
+				            :fullscreen-mobile="false"
+				            :months-to-show="2"
+				            :offset-y="10"
+				            :trigger="trigger"
+				            v-on:date-one-selected="function(val) { inputDateOne = val }"
+				            v-on:date-two-selected="function(val) { inputDateTwo = val }"
+							v-on:previous-month="onMonthChange"
+							v-on:next-month="onMonthChange"
+				            v-on:closed="onClosed"
+				          ></airbnb-style-datepicker>
+						</label>
+						<label for="">
+							<input class="general-form__drop general-form__drop_3" type="text" placeholder="Add guests">
+							<div class="general-form__dropdown general-form__dropdown_3">
+								<ul>
+									<li class="dflex">
+										Adults
+										 <span class="quantity buttons_added">
+											<input type="button" value="-" class="minus">
+											<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+											<input type="button" value="+" class="plus">
+										</span>
+									</li>
+									<li class="dflex">
+										Children
+										<span class="quantity buttons_added">
+											<input type="button" value="-" class="minus">
+											<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+											<input type="button" value="+" class="plus">
+										</span>
+									</li>
+									<li class="dflex">
+										Infants
+										<span class="quantity buttons_added">
+											<input type="button" value="-" class="minus">
+											<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+											<input type="button" value="+" class="plus">
+										</span>
+									</li>
+								</ul>
+							</div>
+						</label>
+						<input type="submit">
+					</form>
+					<div class="general-banner__let">
+						<p>Lorem ipsum dolor</p>
+						<a href="#" class="btn-default">Lorem Quiz</a>
+					</div>
+				</div>
+			</div>		
+		</section>
+	</div>
+	<!-- GENERAL BANNER END -->
+
+
+	<!-- ABOUT SECTION -->
+	<section class="about">
+		<div class="wrapper">
+			<div class="about__row">
+				<div class="about__images">
+					<!-- <img src="images/demo/img-01.png" alt="" width="500">
+					<img src="images/demo/img-02.png" alt="" width="300"> -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Zc9Ku66xe9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="about__text">
+					<h2>About Artisan</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas ac
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ABOUT SECTION END -->
+
+	<!-- BEST SELLER -->
+	<section class="best-seller1" id="best-seller">
+		<div class="wrapper">
+			<h2 class="art-cat-001">Artisan Categories</h2>
+			<div class="best-seller1__row">
+				<div class="best-seller1__col">
+					<a href="" class="best-seller1__item">
+						<span class="best-seller1__item_img" style="background-image: url(images/demo/paper-001-istockphoto-1129108381-612x612.jpeg);"></span>
+						<p>Paper category 1</p>
+					</a>
+				</div>
+				<div class="best-seller1__col">
+					<a href="" class="best-seller1__item">
+						<span class="best-seller1__item_img" style="background-image: url(images/demo/metal-001-istockphoto-1324173382-612x612.jpeg);"></span>
+						<p>Metal category 1</p>
+					</a>
+				</div>
+				<div class="best-seller1__col">
+					<a href="" class="best-seller1__item">
+						<span class="best-seller1__item_img" style="background-image: url(images/demo/ceramics-001-istockphoto-1126623592-612x612.jpeg);"></span>
+						<p>Ceramics category 1</p>
+					</a>
+				</div>
+				<div class="best-seller1__col">
+					<a href="" class="best-seller1__item">
+						<span class="best-seller1__item_img" style="background-image: url(images/demo/paper-002-istockphoto-816840896-612x612.jpeg);"></span>
+						<p>Paper category 2</p>
+					</a>
+				</div>
+				<div class="best-seller1__col">
+					<a href="" class="best-seller1__item">
+						<span class="best-seller1__item_img" style="background-image: url(images/demo/metal-002-istockphoto-1324173382-612x612.jpeg);"></span>
+						<p>Metal Category 2</p>
+					</a>
+				</div>
+				<div class="best-seller1__col">
+					<a href="" class="best-seller1__item">
+						<span class="best-seller1__item_img" style="background-image: url(images/demo/ceramics-002-istockphoto-1308083568-612x612.jpeg);"></span>
+						<p>Ceramics category 2</p>
+					</a>
+				</div>
+				<div class="best-seller1__col">
+					<a href="" class="best-seller1__item">
+						<span class="best-seller1__item_img" style="background-image: url(images/demo/paper-003-istockphoto-816840896-612x612.jpeg);"></span>
+						<p>Paper category 3</p>
+					</a>
+				</div>
+				<div class="best-seller1__col">
+					<a href="" class="best-seller1__item">
+						<span class="best-seller1__item_img" style="background-image: url(images/demo/metal-003-istockphoto-1324173382-612x612.jpeg);"></span>
+						<p>Metal Category 3</p>
+					</a>
+				</div>
+				<div class="best-seller1__col">
+					<a href="" class="best-seller1__item">
+						<span class="best-seller1__item_img" style="background-image: url(images/demo/ceramics-003-istockphoto-1126623592-612x612.jpeg);"></span>
+						<p>Ceramics category 3</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- BEST SELLER END -->
+
+	<!-- ARTISTS -->
+	<section class="artists">
+		<div class="wrapper">
+			<h2 class="art-cat-001">Featured Artists</h2>
+			<div class="artists__row">
+				<div class="artists__col">
+					<div class="artists__wrap">
+						<div class="artists__image">
+							<img src="images/demo/img-05.jpg" alt="">
+						</div>
+						<h5>Lorem Ipsum</h5>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipistempor t 
+						</p>
+					</div>
+				</div>
+				<div class="artists__col">
+					<div class="artists__wrap">
+						<div class="artists__image">
+							<img src="images/demo/img-06.jpg" alt="">
+						</div>
+						<h5>Lorem Ipsum</h5>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipistempor t 
+						</p>
+					</div>
+				</div>
+				<div class="artists__col">
+					<div class="artists__wrap">
+						<div class="artists__image">
+							<img src="images/demo/img-07.jpg" alt="">
+						</div>
+						<h5>Lorem Ipsum</h5>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipistempor t 
+						</p>
+					</div>
+				</div>
+				<div class="artists__col">
+					<div class="artists__wrap">
+						<div class="artists__image">
+							<img src="images/demo/img-08.jpg" alt="">
+						</div>
+						<h5>Lorem Ipsum</h5>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipistempor t 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ARTISTS END -->
+
+	<!-- BEST SELLER -->
+	<section class="best-seller" id="best-seller">
+		<div class="wrapper">
+			<h2>Activity Spotlight</h2>
+			<div class="best-seller__row">
+                <div class="best-seller__col">
+					<div class="best-seller__item">
+						<div class="best-seller__image">
+							<a href="#" class="icon-fav">
+								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+							</a>
+							<a href="#" class="general-image">
+								<img class="general-image__main" src="images/demo/activity-006-01-istockphoto-1339743093-612x612.jpeg" alt="">
+
+								<span class="general-image__hover">
+									<img src="images/demo/activity-006-02-istockphoto-1339743093-612x612.jpeg" alt="">
+									<img src="images/demo/activity-006-03-istockphoto-1339743093-612x612.jpeg" alt="">
+									<img src="images/demo/activity-006-04-istockphoto-1339743093-612x612.jpeg" alt="">
+								</span>
+							</a>
+						</div>
+						<a href="#" class="best-seller-name">
+							<div class="best-seller-name__top">
+								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;height:12px;width:12px;fill:#f3d12a" aria-hidden="true" role="presentation" focusable="false"><path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path></svg>
+								<span>4,92</span> (2 450) 	&#183; Tokyo
+							</div>
+							<p>Glass making lorem ipsum dolor sit jojiojo huhrohrwour</p>
+							<div class="best-seller-name__price">
+								
+							</div>
+						</a>
+					</div>
+				</div>
+                <div class="best-seller__col">
+					<div class="best-seller__item">
+						<div class="best-seller__image">
+							<a href="#" class="icon-fav">
+								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+							</a>
+							<a href="#" class="general-image">
+								<img class="general-image__main" src="images/demo/activity-007-01-istockphoto-1339743093-612x612.jpeg" alt="">
+
+								<span class="general-image__hover">
+									<img src="images/demo/activity-007-02-istockphoto-1339743093-612x612.jpeg" alt="">
+									<img src="images/demo/activity-007-03-istockphoto-1339743093-612x612.jpeg" alt="">
+									<img src="images/demo/activity-007-04-istockphoto-1339743093-612x612.jpeg" alt="">
+								</span>
+							</a>
+						</div>
+						<a href="#" class="best-seller-name">
+							<div class="best-seller-name__top">
+								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;height:12px;width:12px;fill:#f3d12a" aria-hidden="true" role="presentation" focusable="false"><path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path></svg>
+								<span>4,92</span> (2 450) 	&#183; Hiroshima
+							</div>
+							<p>Kimonno making lorem ipsum dolor sit jojiojo huhrohrwour</p>
+							<div class="best-seller-name__price">
+								
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="best-seller__col">
+					<div class="best-seller__item">
+						<div class="best-seller__image">
+							<a href="#" class="icon-fav">
+								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+							</a>
+							<a href="#" class="general-image">
+								<img class="general-image__main" src="images/demo/activity-008-01-istockphoto-1339743093-612x612.jpeg" alt="">
+
+								<span class="general-image__hover">
+									<img src="images/demo/activity-008-02-istockphoto-1339743093-612x612.jpeg" alt="">
+									<img src="images/demo/activity-008-03-istockphoto-1339743093-612x612.jpeg" alt="">
+									<img src="images/demo/activity-008-04-istockphoto-1339743093-612x612.jpeg" alt="">
+								</span>
+							</a>
+						</div>
+						<a href="#" class="best-seller-name">
+							<div class="best-seller-name__top">
+								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;height:12px;width:12px;fill:#f3d12a" aria-hidden="true" role="presentation" focusable="false"><path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path></svg>
+								<span>4,92</span> (2 450) 	&#183; Sapporo
+							</div>
+							<p>Japanese fabric lorem ipsum dolor sit jojiojo huhrohrwour</p>
+							<div class="best-seller-name__price">
+								
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="best-seller__col">
+					<div class="best-seller__item">
+						<div class="best-seller__image">
+							<a href="#" class="icon-fav">
+								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+							</a>
+							<a href="#" class="general-image">
+								<img class="general-image__main" src="images/demo/activity-001-01-istockphoto-1339743093-612x612.jpeg" alt="">
+
+								<span class="general-image__hover">
+									<img src="images/demo/activity-001-02-istockphoto-1339743093-612x612.jpeg" alt="">
+									<img src="images/demo/activity-001-03-istockphoto-1339743093-612x612.jpeg" alt="">							
+								</span>
+							</a>
+						</div>
+						<a href="#" class="best-seller-name">
+							<div class="best-seller-name__top">
+								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;height:12px;width:12px;fill:#f3d12a" aria-hidden="true" role="presentation" focusable="false"><path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path></svg>
+								<span>4,92</span> (2 450) 	&#183; Tokyo
+							</div>
+							<p>Noodle making lorem ipsum dolor sit jojiojo huhrohrwour </p>
+							<div class="best-seller-name__price">
+							
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- BEST SELLER END -->
+	
+	<script src="js/engineer.js"></script>
+	<script src="https://unpkg.com/vue-airbnb-style-datepicker@latest/dist/vue-airbnb-style-datepicker.min.js"></script>
+	<script>
+      var datepickerOptions = {}
+      Vue.use(window.AirbnbStyleDatepicker, datepickerOptions)
+
+      var app = new Vue({
+        el: '#app',
+        data: {
+          dateFormat: 'D MMM',
+          inputDateOne: '',
+          inputDateTwo: '',
+          buttonDateOne: '',
+          buttonDateTwo: '',
+          inlineDateOne: '',
+          sundayDateOne: '',
+          sundayFirst: false,
+          alignRight: false,
+          trigger: false,
+        },
+        methods: {
+          formatDates: function(dateOne, dateTwo) {
+            var formattedDates = ''
+            if (dateOne) {
+              formattedDates = dateFns.format(dateOne, this.dateFormat)
+            }
+            if (dateTwo) {
+              formattedDates += ' - ' + dateFns.format(dateTwo, this.dateFormat)
+            }
+            return formattedDates
+          },
+          onClosed: function() {
+            var datesStr = this.formatDates(this.inputDateOne, this.inputDateTwo)
+            console.log('Dates Selected: ' + datesStr)
+            this.trigger = false
+          },
+          toggleAlign: function() {
+            this.alignRight = !this.alignRight
+          },
+          triggerDatepicker: function() {
+            this.trigger = !this.trigger
+          },
+          onMonthChange: function(dates) {
+            console.log('months changed', dates)
+          },
+        },
+      })
+    </script>
+</body>
+</html>

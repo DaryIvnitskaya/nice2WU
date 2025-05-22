@@ -1,0 +1,165 @@
+/*
+ === X-carousel slider with "Before and After" ===
+ Version: 1.0.0
+ Author: EVNE Developers
+ Author URI: http://www.evnedev.com/
+ */
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500");
+.poster-main {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 30px auto; }
+  .poster-main * {
+    font-family: 'Work Sans', sans-serif; }
+  .poster-main .poster-subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto 20px; }
+    .poster-main .poster-subtitle > span {
+      color: #57616b;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.1px; }
+  .poster-main .poster-list {
+    margin: 0 0 50px;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    overflow: hidden; }
+    .poster-main .poster-list.ready {
+      opacity: 1;
+      overflow: visible; }
+    .poster-main .poster-list .poster-item {
+      position: absolute;
+      min-width: 400px;
+      z-index: 0;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translateY(-50%) translateX(-50%);
+              transform: translateY(-50%) translateX(-50%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%; }
+      .poster-main .poster-list .poster-item.current .drag-btn:after {
+        content: '';
+        width: 22px;
+        height: 59px;
+        position: absolute;
+        top: 50%;
+        right: -13px;
+        margin-top: -30px;
+        background: #8564C2 url("../images/btn_drag.svg") no-repeat 0 0;
+        border-radius: 4px;
+        background-size: contain;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      .poster-main .poster-list .poster-item .desc {
+        display: none; }
+    .poster-main .poster-list .image.right {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0; }
+    .poster-main .poster-list .image.left {
+      position: relative;
+      z-index: 2;
+      overflow: hidden; }
+    .poster-main .poster-list .drag-btn {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      border-right: 3px solid #8564c1;
+      z-index: 2;
+      overflow: visible !important; }
+  .poster-main .poster-description {
+    margin: 0 auto; }
+    .poster-main .poster-description .desc {
+      width: 50%;
+      font-size: 16px;
+      line-height: 24px;
+      color: #737778; }
+  .poster-main .posters-arrows {
+    position: relative;
+    margin: 0 auto;
+    z-index: 3;
+    min-height: 40px; }
+  .poster-main .inner-wrap {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    max-width: 120px;
+    height: 30px;
+    width: 100%; }
+  .poster-main .slide-count {
+    text-align: center;
+ }
+  .poster-main .poster-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .poster-main .poster-prev-btn {
+    background: url("../images/left-arrow.svg") no-repeat center center; }
+  .poster-main .poster-next-btn {
+    right: 0;
+    background: url("../images/right-arrow.svg") no-repeat center center; }
+
+@media (max-width: 768px) {
+  .poster-main {
+    max-width: 100%;
+    overflow-x: hidden; }
+    .poster-main .subtitle {
+      width: 100% !important;
+      margin-bottom: 10px; }
+      .poster-main .subtitle > span {
+        font-size: 16px; }
+    .poster-main .poster-list {
+      position: relative; }
+    .poster-main .poster-list .poster-item {
+      min-width: 0 !important; }
+      .poster-main .poster-list .poster-item.current {
+        width: 100% !important; }
+        .poster-main .poster-list .poster-item.current .drag-btn:after {
+          width: 30px;
+          height: 30px;
+          background-position: center center;
+          background-size: 60%;
+          top: auto;
+          bottom: -30px;
+          right: -17px;
+          border-radius: 50%; }
+      .poster-main .poster-list .poster-item .desc {
+        width: 100%;
+        margin-top: 90px; }
+    .poster-main .posters-arrows {
+      width: 100%;
+      right: auto;
+      height: 100%; }
+    .poster-main .poster-btn {
+      width: 20px;
+      height: 20px; }
+    .poster-main .poster-description {
+      margin: 30px auto 0;
+      width: 100% !important; }
+      .poster-main .poster-description .desc {
+        width: 100%; }
+    .poster-main .slide-count {
+      display: inline-block; } }

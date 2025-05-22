@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pug Force</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/X-carousel.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery.countdown.css"/>
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+	<header class="header">
+<!-- 		<div class="header__info">
+			Public Launch Will Be On <strong><u>Monday, Oct 4th 1 PM EST</u> -</strong> <strong class="text-red">45d 15h 25m 54s</strong>
+		</div> -->
+		<div class="wrapper">
+			<div class="header__row">				
+				<div class="header__logo">
+					<a href="javascript:void(0);" title="title">
+						<img src="images/logo.svg" alt="image description">
+					</a>
+				</div>
+				<div class="header__burger">
+					<div class="burger-menu">
+						<div class="burger-click-region">
+							<span class="burger-menu-piece"></span>
+							<span class="burger-menu-piece"></span>
+							<span class="burger-menu-piece"></span>
+						</div>
+					</div>
+				</div>
+				<div class="header__nav">
+					<ul>
+						<li>
+							<a class="anchors" href="#about" title="About">About</a>
+						</li>
+						<li>
+							<a class="anchors" href="#mint" title="Mint">Mint</a>
+						</li>
+						<li>
+							<a class="anchors" href="#roadmap" title="Road Map">Road Map</a>
+						</li>
+						<li>
+							<a class="anchors" href="#team" title="Team">Team</a>
+						</li>
+						<li>
+							<a class="anchors" href="#faq" title="FAQ">FAQ</a>
+						</li>
+						<li class="twitter">
+							<a href="https://twitter.com/pugforcenft" title="Twitter"><span>Twitter</span></a>
+						</li>
+						<li class="discord">
+							<a href="https://discord.gg/GMFHMMXFyh" title="Discord"><span>Discord</span></a>
+						</li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="mint" class="general-screen">
+		<div class="wrapper">
+			<div class="general-screen__wrap">
+				<h1>In a world where animals run wild... <br><strong>Pug Force</strong> is here to save the day!</h1>
+				<h4>Pug Force NFT Minting Will Start OCT 4th, 2021 at 11 AM EST.</h4>				
+				<p>
+					Enter your email below to receive updates about presell, giveaways, Pugville White Paper, launch reminders and much more.
+				</p>
+				<form method="post" class="af-form-wrapper" accept-charset="UTF-8" 
+					action="https://www.aweber.com/scripts/addlead.pl"  >
+					<div style="display: none;">
+					<input type="hidden" name="meta_web_form_id" value="1120237444" />
+					<input type="hidden" name="meta_split_id" value="" />
+					<input type="hidden" name="listname" value="awlist6131818" />
+					<input type="hidden" name="redirect" value="" 
+					id="redirect_073122fae9592e4e14415620f0c947d5" />
+					<input type="hidden" name="meta_adtracking" value="pugforce" />
+					<input type="hidden" name="meta_message" value="1001" />
+					<input type="hidden" name="meta_required" value="email" />
+					<input type="hidden" name="meta_tooltip" value="" />
+					</div>
+					<div id="af-form-1120237444" class="af-form">
+						<div id="af-body-1120237444" class="af-body af-standards form">
+							<input placeholder="Give Pug Force your email" class="text" id="awf_field-112689833" type="text" 
+					name="email" value="" tabindex="500" onfocus=" if (this.value == '') { this.value = 
+					''; }" onblur="if (this.value == '') { this.value='';} " />
+					
+							<div class="btn-submit">
+								<input name="submit" class="submit" type="submit" value="Submit" 
+													tabindex="501" />
+							</div>
+						</div>
+					</div>
+					<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?
+					id=jIxMDEzM7CwsLA==" alt="" /></div>
+				</form>
+				<p>Public launch will be on <strong class="text-green">October 4th at 11:00AM EST</strong></p>
+				<div class="countdown">
+					<div id="countdown"></div>
+				</div>				
+			</div>
+		</div>
+		
+		<div class="carousel-bg">
+			<div class="wrapper">
+				<div class="carousel__heading">Check out some of these Epic characters here to protect and serve!</div>
+			</div>
+			<div class="carousel">
+				<a href="#" class="carousel__item">
+					<div class="carousel__wrap">
+						<div class="carousel__img">
+							<img src="images/demo/img-01.jpg" alt="image description">
+						</div>
+						<p>Disturbance reports in Sector 4 - Police Pug is on the way!</p>
+					</div>
+				</a>
+				<a href="#" class="carousel__item">
+					<div class="carousel__wrap">
+						<div class="carousel__img">
+							<img src="images/demo/img-02.jpg" alt="image description">
+						</div>
+						<p>Fire in your home? No problem, Fireman Pug will be there on the double</p>
+					</div>
+				</a>
+				<a href="#" class="carousel__item">
+					<div class="carousel__wrap">
+						<div class="carousel__img">
+							<img src="images/demo/image1.jpeg" alt="image description">
+						</div>
+						<p>Need a quick airstrike on your noisy neighbors? Fighter Pilot Pug incoming!</p>
+					</div>
+				</a>
+				<a href="#" class="carousel__item">
+					<div class="carousel__wrap">
+						<div class="carousel__img">
+							<img src="images/demo/navy.jpeg" alt="image description">
+						</div>
+						<p>Battleships ready! Sailor Pug is making waves</p>
+					</div>
+				</a>
+				<a href="#" class="carousel__item">
+					<div class="carousel__wrap">
+						<div class="carousel__img">
+							<img src="images/demo/img-06.jpg" alt="image description">
+						</div>
+						<p>Those pesky barbarians trying to invade your land? Centurion Pug is ready to fight with honor!</p>
+					</div>
+				</a>
+				<a href="#" class="carousel__item">
+					<div class="carousel__wrap">
+						<div class="carousel__img">
+							<img src="images/demo/image2.jpeg" alt="image description">
+						</div>
+						<p>Pug Force Commanding Officer - General Patton</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+
+			
+		
+		<div class="wrapper">
+			<h2>Ok so I know what you’re thinking...</h2>
+			<p>Pugs are cute, lazy, and sometimes a bit chubby. How are they going to protect me from danger?  <br>Well here at Pug Force the law abiding citizens of Pugville know they can count on the Pug Force to keep them safe!</p>
+		</div>
+	</section>	
+
+	<section id="about" class="how-it">
+		<div class="wrapper">
+			<div class="how-it__row">
+				<div class="how-it__text">
+					<h2>Here’s how it all started....</h2>
+					<p>
+						Many years ago it was a dark time in Pugville and the streets were riddled with crime.  No one was safe, not even in their own dog house!  But when Mayor Chadworth Puggington was elected, he vowed to make a change!  A long decorated war hero who won the purple bone 
+						award for his bravery in the war against the Parisian Poodles saw his fellow country-pugs living in fear and despair. He decided to fight one last war, but this time on his home turf. 
+					</p>
+					<p>
+						One night when he was sleeping and dreaming of chasing his tail, he woke up to a vision of a new world, a world where Pugs could feel safe in their own doghouses, walk their pups to school, and be able to live the life that every Pug dreams of!  The next morning, his first initiative
+						was to create a peace keeping army of officers trained at the best kennels in all the land. 
+					</p>
+					<h3>He called this team of elite peace keepers.... <br> <strong>THE PUG FORCE</strong></h3>
+				</div>
+				<div class="how-it__img">
+					<img src="images/demo/img-13.png" alt="image description">
+				</div>
+			</div>			
+		</div>
+	</section>
+
+	<section class="come-out">
+		<div class="come-out__row">
+			<div class="come-out__text">
+				<p>
+					Come out and support the Pugs of Pugville and adopt your very own cute, cuddly Pug Force Officer on <strong class="text-green">October 4th at 11:00AM EST.</strong>
+				</p>
+			</div>
+			<div class="countdown">
+				<div id="countdown2"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="single-carousel">
+		<div class="wrapper">
+			<div class="single-carousel__heading">Like any elite military unit, there are a few super rare Pug Force Officers that any lucky minter has a chance to own</div>
+			<div class="single-carousel__row">
+				<div class="single-carousel__slider">
+
+					<div class="poster-main" id="carousel" data-setting='{
+                             "posterWidthPersent": 60,
+                             "zStepPX": 170,
+                             "posterStepPersent": 35,
+                             "speed":700,
+                             "autoPlay":false,
+                             "delay":3000,
+                             "perspective": 600
+                            }'>
+				        <ul class="poster-list">
+				            <li class="poster-item">
+								<a href="#" class="carousel_single__wrap">
+									<div class="carousel_single__img">
+										<img src="images/demo/img-12.jpg" alt="image description">
+									</div>
+									<p>Gladiator Pug</p>
+								</a>
+								<h2 class="carousel_single__descr">Gladiator Pug</h2>
+				            </li>
+				            <li class="poster-item">
+				                <a href="#" class="carousel_single__wrap">
+									<div class="carousel_single__img">
+										<img src="images/demo/default_no_image.png" alt="image description">
+									</div>
+									<p>007 Pug</p>
+								</a>
+								<h2 class="carousel_single__descr">007 Pug</h2>
+				            </li>
+				            <li class="poster-item">
+				               <a href="#" class="carousel_single__wrap">
+									<div class="carousel_single__img">
+										<img src="images/demo/default_no_image.png" alt="image description">
+									</div>
+									<p>Astronaut Pug</p>
+								</a>
+								<h2 class="carousel_single__descr">Astronaut Pug</h2>
+				            </li>
+				            <li class="poster-item">
+				                <a href="#" class="carousel_single__wrap">
+									<div class="carousel_single__img">
+										<img src="images/demo/default_no_image.png" alt="image description">
+									</div>
+									<p>Tank Commander</p>
+								</a>
+								<h2 class="carousel_single__descr">Tank Commander</h2>
+				            </li>
+				            <li class="poster-item">
+				                <a href="#" class="carousel_single__wrap">
+									<div class="carousel_single__img">
+										<img src="images/demo/default_no_image.png" alt="image description">
+									</div>
+									<p>Thug Pug</p>
+								</a>
+								<h2 class="carousel_single__descr">Thug Pug</h2>
+				            </li>
+				            <li class="poster-item">
+				                <a href="#" class="carousel_single__wrap">
+									<div class="carousel_single__img">
+										<img src="images/demo/default_no_image.png" alt="image description">
+									</div>
+									<p>Psychedelic Pug</p>
+								</a>
+								<h2 class="carousel_single__descr">Psychedelic Pug</h2>
+				            </li>
+				        </ul>
+				        <div class="posters-arrows">
+				            <div class="inner-wrap">
+				                <div class="slide-count">
+				                    <span>1</span> / <span>7</span>
+				                </div>
+				                <div class="poster-btn poster-prev-btn"></div>
+				                <div class="poster-btn poster-next-btn"></div>
+				            </div>
+				        </div>
+				        <div class="poster-description"></div>
+				    </div>			        
+				</div>
+			<!-- 	<div class="single-carousel__text">
+					<h2>Gladiator Pug</h2>
+				</div> -->
+			</div>
+		</div>
+	</section>
+
+	<section id="roadmap" class="road-map">
+		<div class="wrapper">
+			<h2>Road Map</h2>
+			<h4 class="road-map__subhead text-center">Pug Force Community Progress <br> <a href="https://discord.gg/GMFHMMXFyh" title="Click here">Click here</a> to join the Pug Force Discord Family!</h4>
+			
+			<div class="road-map__row">
+				<div class="road-map__col">
+					<div class="road-map__wrap">
+						<h4>Phase 1 - Pug Force Deployment!</h4>
+						<p>10k Pug Force Officers Public Mint (INSERT DATE)</p>
+						<p>The Pug Force are locked and loaded and ready to roll into action! 
+						10,000 Pug Force Officers are being deployed and they need some fearless commanders to lead them - be the true hero and take them on to victory! <br></p>
+					</div>
+				</div>
+				<div class="road-map__col"></div>
+				<div class="road-map__col"></div>
+				<div class="road-map__col">
+					<div class="road-map__wrap text-left">
+						<h4>Phase 2 - Pug Fellas Rebellion! </h4>
+						<p>10k Pug Fellas Public Mint: To Be Announced Soon!</p>
+						<p>
+							Those obnoxious Pug Force Officers need some payback for all the toes they’ve stepped on! <br>The Pug Fellas are gearing up to bring a healthy balance of crime back to Pugville… they need some mob bosses to indulge their dark side a little! 
+						</p>
+					</div>
+				</div>
+				<div class="road-map__col">
+					<div class="road-map__wrap">
+						<h4>Phase 3 - YES! GAMIFICATION BABY!</h4>
+						<p>Pugville Game Launch! - June 1st 2022</p>
+						<p>(? NUMBER) of Pugville Territories (plots) - FREE MINT - MORE DETAILS SOON!</p>
+						<p>Pugville has unique NFT Territories - and they need controlling - so who’s going to smash their way to the top and hold all the power? </p>
+
+						<p>We’re excited to announce the Pugs team is working on a mind-blowing Pugville game component to put your Pugs into play!  </p>
+						<p>You’ll be able to place both Pug Force Officers and Pug Fellas into Pugville!</p>
+						<p>Whichever side you’re rooting for, you can watch them both earn a fortune for you as they crank up their valiant assaults and protect your conquered territory with honour! </p>
+						<p>Remember! Your Pugville territory is a unique and limited asset that you can exchange anytime on OpenSea! </p>
+
+					</div>
+				</div>
+				<div class="road-map__col"></div>
+				<div class="road-map__col"></div>
+				<div class="road-map__col">
+					<div class="road-map__wrap text-left">
+						<h4>Phase 4 - Pug merchandise release! </h4>
+						<p>Date: To Be Announced Soon!</p>
+						<p>You’ve got your unique Pugs in your wallet - now bring them closer to reality! <br>Get your unique T-shirts, hoodies & more with your personalised pug on them for all to see!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="violet">
+		<div class="wrapper">
+			<div id="team" class="meet">
+				<h2>Meet your team of commanders!</h2>
+				<div class="meet__row">
+					<div class="meet__col">
+						<a href="#" class="meet__wrap">
+							<div class="meet__img">
+								<img src="images/team/image1.jpeg" alt="image description">
+							</div>
+							<div class="meet__text">
+								<h4>General Pug</h4>
+								<small>Commander in Chief</small>
+								<p>The Ultimate Visionary, the General’s strategies have won victory for countless projects over 20 years marketing experience - he’s now the driving force leading our Pugs skyward!</p>
+							</div>
+						</a>
+					</div>
+					<div class="meet__col">
+						<a href="#" class="meet__wrap">
+							<div class="meet__img">
+								<img src="images/team/PUGELLA.jpeg" alt="image description">
+							</div>
+							<div class="meet__text">
+								<h4>PugElla</h4>								
+								<small>Art Director</small>
+								<p>The sensational Art Director, Ella is directly responsible for how mind-blowingly cute our Pugs are! She has experience from top-rated companies, producing staggering results every time.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="meet__row">
+					<div class="meet__col">
+						<a href="#" class="meet__wrap">
+							<div class="meet__img">
+								<img src="images/team/images3.jpeg" alt="image description">
+							</div>
+							<div class="meet__text">
+								<h4>PugMin</h4>
+								<small>Head Developer</small>
+								<p>Our Legendary Game Developer - the curious Min, stops at nothing to deliver stunning experiences to users of his games, his input is proving utterly invaluable to this project!</p>
+							</div>
+						</a>
+					</div>
+					<div class="meet__col">
+						<a href="#" class="meet__wrap">
+							<div class="meet__img">
+								<img src="images/team/image4.jpeg" alt="image description">
+							</div>
+							<div class="meet__text">
+								<h4>Mr. Puggers </h4>
+								<small>Head Designer</small>
+								<p>World-class Graphic Designer by day, Mr. Puggers spends his nights training himself for the next day ahead! His relentless pursuit of perfection keeps our designs amazingly fresh.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="accordion">
+				<h2 id="faq">still have questions?</h2>
+				<div class="faq__wrap">
+					  <div class="card">
+					    <div class="card-header" id="headingOne">
+					        <button data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          <p>1) Join the Pug Force Community!</p>
+					        </button>
+					    </div>
+
+					    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+					      <div class="card-body">
+							   <ul class="links">
+								   	<li class="twitter">
+										<a href="https://twitter.com/pugforcenft" title="Twitter"></a>
+									</li>
+									<li class="discord">
+										<a href="https://discord.gg/GMFHMMXFyh" title="Discord"></a>
+									</li>	
+							   </ul>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingTwo">
+					        <button class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          <p>2) What are the Pug Force Officers?</p>
+					        </button>
+					    </div>
+					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+					      <div class="card-body">
+					        <p>10,000 utterly unique Pug Force Officers have been lovingly hand-drawn using a genetic design pool of over 100 traits! Visually striking, they feature authentic styles such as Military, Emergency Services, Air Force, Navy - all the great Protectors - even Centurions, and a fortune more!</p>
+					        <p>
+					        	In every genetics pool, there’s a chance for the rare and concealed to appear- and Pug Force Officers are no different! There are 6 SUPER Rare Officers that everyone will have the opportunity to own!
+					        </p>
+					        <p>
+					        	Astronaut Pug <br>
+								007 Pug <br>
+								Psychedelic pug <br>
+								Gladiator Pug <br>
+								Tank Commander <br>
+								Thug Pug
+					        </p>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingThree">
+					        <button class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          <p>3) What are the benefits of owning a Pug Force Officer?</p>
+					        </button>
+					    </div>
+					    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+					      <div class="card-body">
+					        <p>Alongside receiving the FULL commercial rights to your certified Officer, you will be introduced into the strongest community out there - the spectacular Pug Force! We strive to ensure everyone is included and warmly welcome - there’ll always be someone waiting for you!</p>
+					      </div>
+					    </div>
+					  </div>
+
+					  <div class="card">
+					    <div class="card-header" id="headingFour">
+					        <button class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					          <p>4) When will the Pug Force Officers be launched?</p>
+					        </button>
+					    </div>
+					    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+					      <div class="card-body">
+					        <p>T-minus: Very soon! Come and check our Discord server and follow our Twitter for immediate Launch updates - don’t miss out on your chance!</p>
+
+							<p>Presale begins: (PRESALE DATE) <br>
+								Public Launch scheduled: (PUBLIC LAUNCH DATE)</p>
+
+					      </div>
+					    </div>
+					  </div>
+
+					  <div class="card">
+					    <div class="card-header" id="heading5">
+					        <button class="collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+					          <p>5) How many Pug Force Officers are available?</p>
+					        </button>
+					    </div>
+					    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+					      <div class="card-body">
+					        <p>An absolute maximum of only 10,000 Officers will be minted. Once they’re minted, that’s it! There will only ever be a limited 10,000 - each one an exciting part of history!</p>
+					      </div>
+					    </div>
+					  </div>
+
+					   <div class="card">
+					    <div class="card-header" id="heading6">
+					        <button class="collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+					          <p>6) How much will it cost to mint?</p>
+					        </button>
+					    </div>
+					    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+					      <div class="card-body">
+					        <h2>0.077 ETH</h2>
+					      </div>
+					    </div>
+					  </div>
+
+					   <div class="card">
+					    <div class="card-header" id="heading7">
+					        <button class="collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+					         <p>7) How many Pug Force Officers can I mint in one transaction? </p>
+					        </button>
+					    </div>
+					    <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+					      <div class="card-body">
+					        <p>Presale: 3 per whitelisted wallet address <br>
+							Public sale: 5 per transaction
+							</p>
+					      </div>
+					    </div>
+					  </div>
+
+					   <div class="card">
+					    <div class="card-header" id="heading8">
+					        <button class="collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+					          <p>8) How long after the initial release will my Pug Force Officer be revealed?</p>
+					        </button>
+					    </div>
+					    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+					      <div class="card-body">
+					        <p>24 Hours Post-Launch</p>
+					      </div>
+					    </div>
+					  </div>
+
+					   <div class="card">
+					    <div class="card-header" id="heading9">
+					        <button class="collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+					          <p>9) What is the official contract address?</p>
+					        </button>
+					    </div>
+					    <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
+					      <div class="card-body">
+					        <p>(INSERT CONTRACT ADDRESS HERE)</p>
+					      </div>
+					    </div>
+					  </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__top">
+				<div class="footer__logo">
+					<a href="javascript:void(0);" title="title"><img src="images/logo.svg" alt="image description"></a>
+				</div>
+				<div class="footer__nav">
+					<ul>
+						<li>
+							<a class="anchors" href="#about" title="About">About</a>
+						</li>
+						<li>
+							<a class="anchors" href="#mint" title="Mint">Mint</a>
+						</li>
+						<li>
+							<a class="anchors" href="#roadmap" title="Road Map">Road Map</a>
+						</li>
+						<li>
+							<a class="anchors" href="#team" title="Team">Team</a>
+						</li>
+						<li>
+							<a class="anchors" href="#faq" title="FAQ">FAQ</a>
+						</li>
+						<li class="twitter">
+							<a href="https://twitter.com/pugforcenft" title="Twitter"><span>Twitter</span></a>
+						</li>
+						<li class="discord">
+							<a href="https://discord.gg/GMFHMMXFyh" title="Discord"><span>Discord</span></a>
+						</li>						
+					</ul>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<p>&#169; Copyright 2021 Pug Force  All Rights Reserved.</p>    
+			</div>
+		</div>
+	</footer>
+
+
+<script type="text/javascript">
+// Special handling for in-app browsers that don't always support new windows
+(function() {
+    function browserSupportsNewWindows(userAgent) {
+        var rules = [
+            'FBIOS',
+            'Twitter for iPhone',
+            'WebView',
+            '(iPhone|iPod|iPad)(?!.*Safari\/)',
+            'Android.*(wv|\.0\.0\.0)'
+        ];
+        var pattern = new RegExp('(' + rules.join('|') + ')', 'ig');
+        return !pattern.test(userAgent);
+    }
+    if (!browserSupportsNewWindows(navigator.userAgent || navigator.vendor || win-
+dow.opera)) {
+        document.getElementById('af-form-1120237444').parentElement.removeAt-
+tribute('target');
+    }
+})();
+</script><script type="text/javascript">
+    <!--
+    (function() {
+        var IE = /*@cc_on!@*/false;
+        if (!IE) { return; }
+        if (document.compatMode && document.compatMode == 'BackCompat') {
+            if (document.getElementById("af-form-1120237444")) {
+                document.getElementById("af-form-1120237444").className = 'af-form af-quirksMode';
+            }
+            if (document.getElementById("af-body-1120237444")) {
+                document.getElementById("af-body-1120237444").className = "af-body in-line af-quirksMode";
+            }
+            if (document.getElementById("af-header-1120237444")) {
+                document.getElementById("af-header-1120237444").className = "af-header af-quirksMode";
+            }
+            if (document.getElementById("af-footer-1120237444")) {
+                document.getElementById("af-footer-1120237444").className = "af-footer af-quirksMode";
+            }
+        }
+    })();
+    -->
+</script>
+<script type="text/
+javascript">document.getElementById('redirect_073122fae9592e4e14415620f0c947d
+5').value = document.location;</script>
+<!-- /AWeber Web Form Generator 3.0.1 -->
+
+	<!-- bootstrap -->
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/engineer.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/slick.min.js"></script>
+
+	<script src="js/X-carousel.js"></script>
+    <script>
+	    $(document).on('ready',function() {
+	        Carousel.init($("#carousel"));
+	    });
+	</script>
+</body>
+</html>

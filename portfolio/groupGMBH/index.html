@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home page</title>
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Google consent mode v2 initialisation -->
+    <script>
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        // Set default consent to 'denied' as a placeholder
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied'
+        });
+    </script>
+    <!-- Google consent mode v2 initialisation -->
+
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'TAG_ID');
+    </script> -->
+    <!-- End Google tag (gtag.js) -->
+
+</head>
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__row">
+				<div class="header__logo">
+					<a href="javascript:void(0);" title="logo">
+						<svg xmlns="http://www.w3.org/2000/svg" width="90" height="68" viewBox="0 0 90 68" fill="none">
+						  <g clip-path="url(#clip0_99_504)">
+						    <path d="M9.33561 23.3316V28.59C11.1059 29.3366 13.0541 29.7478 15.0956 29.7478H15.7489V23.3316H9.33561ZM65.4977 4.35718C62.8088 1.66529 59.0874 0 54.981 0H15.0956C10.0239 0 5.54422 2.53731 2.86108 6.41619H54.981C59.6473 6.41619 63.4387 10.2105 63.4387 14.8739C63.4387 19.5373 59.6473 23.3316 54.981 23.3316H28.5346V29.7478H54.981C63.1966 29.7478 69.8549 23.0866 69.8549 14.8739C69.8549 10.7646 68.1896 7.04906 65.4977 4.35718Z" fill="#B28A5B"/>
+						    <path d="M16.0405 0H0V6.41036H16.0405V0Z" fill="#B28A5B"/>
+						    <path d="M89.1208 23.3374V29.7478H66.2383C68.4781 28.0504 70.3242 25.8602 71.6133 23.3374H89.1208Z" fill="#B28A5B"/>
+						    <path d="M89.1238 0V6.41036H71.6251C70.7472 4.68382 69.5894 3.08561 68.1778 1.67696C67.5712 1.07034 66.9325 0.510379 66.2588 0H89.1238Z" fill="#B28A5B"/>
+						    <path d="M25.1048 47.0045H0V53.4148H25.1048V47.0045Z" fill="#B28A5B"/>
+						    <path d="M89.1208 47.0045H38.3745V53.4119H89.1208V47.0045Z" fill="#B28A5B"/>
+						    <path d="M89.1239 55.7509H0V68H89.1239V55.7509Z" fill="#282828"/>
+						    <path d="M15.7487 5.87665H9.33545V53.4148H15.7487V5.87665Z" fill="#B28A5B"/>
+						    <path d="M34.9477 24.8978H28.5344V53.4149H34.9477V24.8978Z" fill="#B28A5B"/>
+						    <path d="M15.5619 64.3136H15.5356C15.3373 64.6869 15.069 64.9582 14.7307 65.1215C14.3924 65.2877 14.0162 65.3694 13.602 65.3694C13.1208 65.3694 12.6862 65.2877 12.3042 65.1215C11.9221 64.9552 11.5926 64.7248 11.3155 64.4303C11.021 64.1095 10.7964 63.7362 10.6476 63.3045C10.496 62.8729 10.4202 62.4004 10.4202 61.8813C10.4202 61.3038 10.5193 60.773 10.7176 60.2947C10.916 59.8164 11.2047 59.4169 11.5867 59.0961C11.858 58.8657 12.1671 58.6907 12.5171 58.5624C12.8671 58.4341 13.2637 58.3728 13.7099 58.3728C14.1328 58.3728 14.5119 58.4282 14.8503 58.5361C15.1886 58.644 15.4802 58.7957 15.7281 58.9882C15.976 59.1807 16.1743 59.4111 16.3289 59.6794C16.4835 59.9477 16.5885 60.2422 16.6497 60.5601H15.1127C15.0282 60.3064 14.8765 60.0906 14.6607 59.9127C14.4449 59.7348 14.1416 59.6473 13.7566 59.6473C13.4562 59.6473 13.1937 59.7056 12.975 59.8194C12.7562 59.9331 12.5725 60.0906 12.4238 60.2889C12.275 60.4872 12.1671 60.7235 12.0942 60.9976C12.0213 61.2718 11.9863 61.5663 11.9863 61.8784C11.9863 62.1904 12.0271 62.5025 12.1117 62.7737C12.1963 63.045 12.3159 63.2812 12.4675 63.4795C12.6192 63.6778 12.8087 63.8324 13.0275 63.9461C13.2462 64.0599 13.497 64.1124 13.7741 64.1124C14.0103 64.1124 14.2203 64.0745 14.4128 63.9986C14.6024 63.9228 14.7628 63.8266 14.8911 63.7041C15.0194 63.5845 15.1215 63.4445 15.1944 63.2841C15.2673 63.1237 15.3023 62.9604 15.3023 62.7912V62.765H13.9462V61.6159H16.7576V65.2148H15.6902L15.5648 64.3107L15.5619 64.3136Z" fill="white"/>
+						    <path d="M18.3474 58.4895H21.5467C21.8734 58.4895 22.1738 58.5303 22.4567 58.6149C22.7366 58.6995 22.9787 58.8249 23.1858 58.9911C23.3899 59.1573 23.5533 59.3586 23.6699 59.5977C23.7866 59.8369 23.8449 60.1081 23.8449 60.4172C23.8449 60.8139 23.7457 61.1522 23.5474 61.4293C23.3491 61.7063 23.0312 61.9134 22.5967 62.0534V62.0796C22.935 62.1817 23.1829 62.3334 23.3433 62.5375C23.5037 62.7387 23.6057 63.0216 23.6553 63.3833C23.6845 63.6137 23.7078 63.8266 23.7224 64.0307C23.737 64.232 23.7516 64.4128 23.7662 64.5732C23.7807 64.7336 23.8012 64.8619 23.8245 64.9611C23.8478 65.0602 23.8886 65.1215 23.9411 65.1477V65.2206H22.4217C22.3721 65.1973 22.34 65.1361 22.3167 65.0398C22.2963 64.9436 22.2788 64.824 22.2613 64.684C22.2467 64.5411 22.2321 64.3836 22.2204 64.2086C22.2088 64.0336 22.1942 63.8528 22.1767 63.6662C22.1359 63.3279 22.025 63.0741 21.8471 62.9079C21.6692 62.7387 21.3922 62.6542 21.0189 62.6542H19.8785V65.2206H18.3416V58.4953L18.3474 58.4895ZM19.8844 61.5109H21.2493C21.5934 61.5109 21.8559 61.4322 22.0367 61.2718C22.2175 61.1114 22.3079 60.8955 22.3079 60.6243C22.3079 60.3531 22.2263 60.1256 22.06 59.9594C21.8938 59.7931 21.6401 59.7115 21.2959 59.7115H19.8844V61.5109Z" fill="white"/>
+						    <path d="M28.4385 65.3781C27.9252 65.3781 27.4644 65.2906 27.0561 65.1156C26.6449 64.9406 26.2978 64.6957 26.0062 64.3836C25.7175 64.0715 25.4958 63.6982 25.3412 63.2724C25.1867 62.8466 25.1108 62.38 25.1108 61.8813C25.1108 61.3826 25.1867 60.9072 25.3412 60.4814C25.4958 60.0556 25.7175 59.6852 26.0062 59.3731C26.2949 59.064 26.6449 58.819 27.0561 58.6411C27.4644 58.4632 27.9281 58.3757 28.4385 58.3757C28.9489 58.3757 29.4039 58.4661 29.8122 58.6411C30.2205 58.819 30.5704 59.064 30.8621 59.3731C31.1508 59.6852 31.3725 60.0527 31.527 60.4814C31.6816 60.9101 31.7574 61.3767 31.7574 61.8813C31.7574 62.3858 31.6816 62.8466 31.527 63.2724C31.3725 63.7011 31.1508 64.0715 30.8621 64.3836C30.5734 64.6957 30.2234 64.9406 29.8122 65.1156C29.4009 65.2906 28.9431 65.3781 28.4385 65.3781ZM28.4473 64.1124C28.736 64.1124 28.9897 64.054 29.2055 63.9403C29.4214 63.8266 29.6022 63.6691 29.748 63.4707C29.8938 63.2724 30.0017 63.0362 30.0746 62.765C30.1476 62.4937 30.1826 62.1992 30.1826 61.8784C30.1826 61.5575 30.1476 61.263 30.0746 60.9888C30.0017 60.7147 29.8938 60.4755 29.748 60.2714C29.6022 60.0672 29.4214 59.9068 29.2055 59.7931C28.9897 59.6794 28.736 59.621 28.4473 59.621C28.1585 59.621 27.9048 59.6794 27.6832 59.7931C27.4615 59.9068 27.2807 60.0672 27.1319 60.2714C26.9832 60.4755 26.8724 60.7147 26.7965 60.9888C26.7207 61.263 26.6828 61.5605 26.6828 61.8784C26.6828 62.1963 26.7207 62.4937 26.7965 62.765C26.8724 63.0362 26.9832 63.2724 27.1319 63.4707C27.2807 63.6691 27.4644 63.8266 27.6832 63.9403C27.9019 64.054 28.1585 64.1124 28.4473 64.1124Z" fill="white"/>
+						    <path d="M35.9133 65.3431C34.9976 65.3431 34.3035 65.1302 33.8281 64.7044C33.3556 64.2786 33.1194 63.669 33.1194 62.8729V58.4865H34.6564V62.9079C34.6564 63.2753 34.7584 63.5641 34.9597 63.777C35.1609 63.9869 35.4788 64.0949 35.9133 64.0949C36.3158 64.0949 36.622 63.984 36.8262 63.7653C37.0303 63.5466 37.1324 63.252 37.1324 62.8845V58.4894H38.6781V62.8758C38.6781 63.6661 38.4419 64.2728 37.9724 64.7015C37.5028 65.1302 36.8145 65.3431 35.9104 65.3431H35.9133Z" fill="white"/>
+						    <path d="M40.3169 58.4895H43.3092C44.0937 58.4895 44.6916 58.6965 45.1086 59.1136C45.3128 59.3177 45.4732 59.554 45.584 59.8223C45.6948 60.0906 45.7502 60.391 45.7502 60.7206C45.7502 61.0501 45.6977 61.333 45.5928 61.5984C45.4878 61.8638 45.3361 62.0913 45.1407 62.2809C44.9453 62.4704 44.7091 62.6192 44.432 62.7242C44.1549 62.8292 43.84 62.8816 43.4929 62.8816H41.883V65.2148H40.3198V58.4895H40.3169ZM41.8801 61.6626H43.1925C43.5192 61.6626 43.7671 61.578 43.9391 61.4088C44.1112 61.2397 44.1958 61.0122 44.1958 60.7206C44.1958 60.4289 44.1112 60.1985 43.9391 60.0381C43.7671 59.8777 43.5221 59.799 43.2013 59.799H41.8801V61.6626Z" fill="white"/>
+						    <path d="M54.7359 64.3136H54.7097C54.5114 64.6869 54.2431 64.9582 53.9048 65.1215C53.5664 65.2877 53.1902 65.3694 52.7761 65.3694C52.2949 65.3694 51.8603 65.2877 51.4783 65.1215C51.0962 64.9552 50.7666 64.7248 50.4896 64.4303C50.195 64.1095 49.9705 63.7362 49.8217 63.3045C49.6701 62.8729 49.5942 62.4004 49.5942 61.8813C49.5942 61.3038 49.6934 60.773 49.8917 60.2947C50.09 59.8164 50.3788 59.4169 50.7608 59.0961C51.032 58.8657 51.3412 58.6907 51.6912 58.5624C52.0411 58.437 52.4378 58.3728 52.884 58.3728C53.3069 58.3728 53.686 58.4282 54.0243 58.5361C54.3626 58.644 54.6543 58.7957 54.9022 58.9882C55.1501 59.1807 55.3484 59.4111 55.503 59.6794C55.6575 59.9477 55.7625 60.2422 55.8238 60.5601H54.2868C54.2022 60.3064 54.0506 60.0906 53.8348 59.9127C53.6189 59.7348 53.3156 59.6473 52.9307 59.6473C52.6303 59.6473 52.3678 59.7056 52.149 59.8194C51.9303 59.9331 51.7466 60.0906 51.5978 60.2889C51.4491 60.4872 51.3412 60.7235 51.2683 60.9976C51.1954 61.2718 51.1604 61.5663 51.1604 61.8784C51.1604 62.1904 51.2012 62.5025 51.2858 62.7737C51.3704 63.045 51.4899 63.2812 51.6445 63.4795C51.7991 63.6778 51.9857 63.8324 52.2045 63.9461C52.4232 64.0599 52.674 64.1124 52.9511 64.1124C53.1873 64.1124 53.3973 64.0745 53.5898 63.9986C53.7793 63.9228 53.9398 63.8266 54.0681 63.7041C54.1964 63.5816 54.2985 63.4445 54.3714 63.2841C54.4443 63.1237 54.4793 62.9604 54.4793 62.7912V62.765H53.1231V61.6159H55.9346V65.2148H54.8672L54.7418 64.3107L54.7359 64.3136Z" fill="white"/>
+						    <path d="M57.521 58.4895H59.5917L60.4316 61.2922C60.4928 61.5022 60.5512 61.7442 60.6124 62.0155C60.6737 62.2867 60.7262 62.5492 60.7757 62.8029C60.837 63.0916 60.8895 63.3891 60.9391 63.6895H60.9653C61.012 63.3891 61.0645 63.0916 61.1199 62.8029C61.1665 62.5492 61.222 62.2867 61.2774 62.0155C61.3357 61.7442 61.3969 61.5022 61.464 61.2922L62.2865 58.4895H64.3834V65.2148H62.9631V62.205C62.9631 61.995 62.9689 61.7501 62.9806 61.473C62.9922 61.1959 63.0039 60.9305 63.0156 60.6768C63.0331 60.3881 63.0506 60.0906 63.071 59.7815H63.0535C62.9981 60.0585 62.9427 60.3327 62.8814 60.6039C62.8318 60.8343 62.7764 61.0764 62.7152 61.333C62.651 61.5897 62.5898 61.8171 62.5285 62.0155L61.569 65.2148H60.3033L59.335 62.0155C59.2738 61.8171 59.2125 61.5897 59.1484 61.333C59.0842 61.0764 59.0288 60.8343 58.9821 60.6039C58.9209 60.3327 58.8655 60.0585 58.8101 59.7815H58.7926C58.8101 60.0877 58.8276 60.3881 58.848 60.6768C58.8596 60.9305 58.8713 61.1959 58.883 61.473C58.8946 61.7501 58.9005 61.995 58.9005 62.205V65.2148H57.5181V58.4895H57.521Z" fill="white"/>
+						    <path d="M66.0925 58.4894H69.2744C69.9685 58.4894 70.4905 58.644 70.8463 58.9502C71.2255 59.2827 71.4151 59.7085 71.4151 60.2335C71.4151 60.9101 71.0534 61.3563 70.3301 61.5809V61.6159C70.7647 61.7179 71.0972 61.9133 71.3305 62.1992C71.5638 62.485 71.6775 62.8379 71.6775 63.252C71.6775 63.5786 71.6192 63.8615 71.5055 64.1007C71.3917 64.3427 71.2284 64.5469 71.0184 64.7161C70.613 65.0485 70.0589 65.2119 69.356 65.2119H66.0925V58.4865V58.4894ZM69.0556 61.193C69.321 61.193 69.5339 61.1317 69.6943 61.0063C69.8548 60.8838 69.9335 60.6943 69.9335 60.4405C69.9335 60.1868 69.8577 60.006 69.7031 59.8747C69.5485 59.7464 69.3385 59.6793 69.0761 59.6793H67.6208V61.1901H69.0586L69.0556 61.193ZM69.1927 64.0044C69.4931 64.0044 69.7323 63.9228 69.9072 63.7595C70.0706 63.6078 70.1522 63.4037 70.1522 63.1441C70.1522 62.8495 70.0589 62.6279 69.8723 62.485C69.6856 62.3391 69.4494 62.2692 69.1665 62.2692H67.6208V64.0044H69.1927Z" fill="white"/>
+						    <path d="M73.0894 58.4895H74.6263V61.0851H77.1666V58.4895H78.7035V65.2148H77.1666V62.3684H74.6263V65.2148H73.0894V58.4895Z" fill="white"/>
+						  </g>
+						  <defs>
+						    <clipPath id="clip0_99_504">
+						      <rect width="89.1239" height="68" fill="white"/>
+						    </clipPath>
+						  </defs>
+						</svg>
+					</a>
+				</div>
+				<div class="header__burger">
+					<div class="burger-menu">
+						<div class="burger-click-region">
+							<span class="burger-menu-piece"></span>
+							<span class="burger-menu-piece"></span>
+							<span class="burger-menu-piece"></span>
+						</div>
+					</div>
+				</div>
+				<div class="header__nav">
+					<ul class="nav">
+						<li>
+							<a class="active anchors" href="#" title="Startseite">
+								Startseite   
+							</a>
+						</li>
+						<li>
+							<a class="anchors" href="#first" title="Über Uns">
+								Über Uns 
+							</a>
+						</li>
+						<li>
+							<a class="anchors" href="#second" title="Leistungen">
+								Leistungen
+							</a>
+						</li>
+						<li>
+							<a class="anchors" href="#third" title="Referenzen">
+								Referenzen
+							</a>
+						</li>
+						<li>
+							<a class="btn-default anchors" href="#fourth" title="Jetzt kontaktieren">
+								Jetzt kontaktieren
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER END -->
+
+	<!-- BANNER -->
+	<div class="wrapper">
+		<section class="banner" style="background-image: url(images/bg-01.jpg);">			
+			<div class="banner__text">
+				<h1 class="wow fadeInLeft" data-wow-delay="0.3s">IPE Group GmbH – Ihr Partner für Immobilien im Raum Bochum</h1>
+				<a class="btn-default wow fadeInLeft" data-wow-delay="0.4s" href="javascript:void(0);" title="Jetzt kontaktieren">Jetzt kontaktieren</a>
+				<div class="banner-img">
+					<img src="images/img-02.png" alt="">
+				</div>
+			</div>			
+		</section>
+	</div>
+	<!-- BANNER END -->
+
+	<!-- SECTION BOXES -->
+	<section class="section-boxes" id="first">
+		<div class="wrapper">
+			<div class="section-boxes__row">
+				<div class="section-boxes__col">
+					<div class="section-boxes__wrap wow fadeIn" data-wow-delay="0.2s">
+						<h5>Seit 2014</h5>
+						<p>Mehr als 100 erfolgreiche Immobilientransaktionen</p>
+					</div>
+				</div>
+				<div class="section-boxes__col">
+					<div class="section-boxes__wrap wow fadeIn" data-wow-delay="0.4s">
+						<h5>Spezialisierung</h5>
+						<p>Ankauf, Veräußerung sowie Sanierung von Wohnimmobilien </p>
+					</div>
+				</div>
+				<div class="section-boxes__col">
+					<div class="section-boxes__wrap wow fadeIn" data-wow-delay="0.6s">
+						<h5>Erfahrung</h5>
+						<p>Über 25 Jahre erfolgreich im Immobiliensektor </p>
+					</div>
+				</div>
+				<div class="section-boxes__col">
+					<div class="section-boxes__wrap wow fadeIn" data-wow-delay="0.8s">
+						<h5>Team</h5>
+						<p>14 Fachkräfte für alle sanierungsrelevanten Gewerke</p>
+					</div>
+				</div>
+				<div class="section-boxes__col">
+					<div class="section-boxes__wrap wow fadeIn" data-wow-delay="1s">
+						<h5>Management </h5>
+						<p>
+							Wolfgang Platzek (CEO) <br>
+							Simon Erlen (COO) <br>
+							Taleb Tatari (CSO)
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- SECTION BOXES END -->
+
+	<!-- SECTION DARK -->
+	<div class="wrapper" id="second">
+		<section class="section-dark">
+			<h2>Unsere Stärken:</h2>
+			<div class="section-dark__row">
+				<div class="section-dark__col">
+					<div class="section-dark__wrap">
+						<div class="section-dark__icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="67" height="66" viewBox="0 0 67 66" fill="none">
+							  <path d="M54.2917 17.1875H51.363C51.9241 16.128 52.2213 14.9488 52.2292 13.75C52.231 12.1899 51.7497 10.6675 50.8515 9.39197C49.9532 8.11642 48.6821 7.15025 47.2126 6.62619C45.7432 6.10212 44.1475 6.04586 42.6448 6.46512C41.1421 6.88439 39.8061 7.75862 38.8202 8.96773C38.746 9.07498 35.655 13.1725 33.6667 15.818C31.6757 13.1697 28.582 9.05573 28.494 8.94298C27.5049 7.73976 26.168 6.87172 24.6664 6.45771C23.1648 6.0437 21.572 6.10398 20.106 6.63028C18.64 7.15658 17.3725 8.12317 16.4771 9.3977C15.5818 10.6722 15.1022 12.1924 15.1042 13.75C15.1122 14.9488 15.4094 16.128 15.9705 17.1875H13.0417C11.4014 17.1897 9.82884 17.8423 8.66894 19.0022C7.50903 20.1621 6.85643 21.7346 6.85425 23.375V33C6.85425 33.547 7.07155 34.0716 7.45834 34.4584C7.84513 34.8452 8.36974 35.0625 8.91675 35.0625H9.60425V49.5C9.44276 50.8933 9.59841 52.3051 10.0596 53.6298C10.5207 54.9544 11.2754 56.1577 12.2672 57.1495C13.2591 58.1413 14.4623 58.896 15.787 59.3572C17.1116 59.8183 18.5234 59.974 19.9167 59.8125H47.4167C48.8101 59.974 50.2219 59.8183 51.5465 59.3572C52.8712 58.896 54.0744 58.1413 55.0663 57.1495C56.0581 56.1577 56.8128 54.9544 57.2739 53.6298C57.7351 52.3051 57.8907 50.8933 57.7292 49.5V35.0625H58.4167C58.9638 35.0625 59.4884 34.8452 59.8752 34.4584C60.262 34.0716 60.4792 33.547 60.4792 33V23.375C60.4771 21.7346 59.8245 20.1621 58.6646 19.0022C57.5047 17.8423 55.9321 17.1897 54.2917 17.1875ZM56.3542 23.375V30.9375H35.7292V21.3125H54.2917C54.8385 21.3132 55.3627 21.5307 55.7494 21.9174C56.136 22.304 56.3535 22.8282 56.3542 23.375ZM42.024 11.5692C42.3414 11.1742 42.7439 10.856 43.2015 10.6384C43.6591 10.4207 44.16 10.3093 44.6667 10.3125C45.5784 10.3125 46.4528 10.6746 47.0974 11.3193C47.7421 11.964 48.1042 12.8383 48.1042 13.75C48.1042 14.6617 47.7421 15.536 47.0974 16.1807C46.4528 16.8253 45.5784 17.1875 44.6667 17.1875H37.7917C39.6535 14.718 41.8947 11.737 42.024 11.5692ZM19.2292 13.75C19.2307 12.8387 19.5933 11.9652 20.2377 11.3209C20.882 10.6766 21.7555 10.3139 22.6667 10.3125C23.1642 10.3074 23.6565 10.4137 24.1076 10.6235C24.5587 10.8334 24.9571 11.1415 25.2737 11.5252C25.4167 11.7205 27.6745 14.7125 29.5417 17.1875H22.6667C21.7555 17.186 20.882 16.8234 20.2377 16.1791C19.5933 15.5347 19.2307 14.6612 19.2292 13.75ZM10.9792 23.375C10.98 22.8282 11.1975 22.304 11.5841 21.9174C11.9708 21.5307 12.495 21.3132 13.0417 21.3125H31.6042V30.9375H10.9792V23.375ZM13.7292 49.5V35.0625H31.6042V55.6875H19.9167C15.58 55.6875 13.7292 53.8367 13.7292 49.5ZM53.6042 49.5C53.6042 53.8367 51.7535 55.6875 47.4167 55.6875H35.7292V35.0625H53.6042V49.5Z" fill="white"/>
+							</svg>
+						</div>
+						<h5>Qualitätsversprechen</h5>
+						<p>
+							Hochwertige Sanierung und <br> erstklassige Ausstattung
+						</p>
+					</div>
+				</div>
+				<div class="section-dark__col">
+					<div class="section-dark__wrap">
+						<div class="section-dark__icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
+							  <g clip-path="url(#clip0_64_81)">
+							    <mask id="mask0_64_81" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="67" height="66">
+							      <path d="M0.000488281 7.62939e-06H66.0005V66H0.000488281V7.62939e-06Z" fill="white"/>
+							    </mask>
+							    <g mask="url(#mask0_64_81)">
+							      <path d="M48.4692 25.2656C48.4692 38.0803 38.0808 48.4688 25.2661 48.4688C12.4514 48.4688 1.93408 38.0803 1.93408 25.2656C1.93408 12.4509 12.4514 1.9336 25.2661 1.9336C38.0808 1.9336 48.4692 12.4509 48.4692 25.2656Z" stroke="white" stroke-width="3.86719" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							      <path d="M64.0669 40.7344C64.0669 53.5491 53.5496 64.0664 40.7349 64.0664C27.9202 64.0664 17.5317 53.5491 17.5317 40.7344C17.5317 27.9197 27.9202 17.5313 40.7349 17.5313C53.5496 17.5313 64.0669 27.9197 64.0669 40.7344Z" stroke="white" stroke-width="3.86719" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							      <path d="M31.2764 47.6828L18.3179 34.7242" stroke="white" stroke-width="3.86719" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							      <path d="M21.8213 27.29L38.7105 44.1791" stroke="white" stroke-width="3.86719" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							      <path d="M44.1797 38.71L27.2905 21.8209" stroke="white" stroke-width="3.86719" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							      <path d="M34.7246 18.3172L47.6832 31.2758" stroke="white" stroke-width="3.86719" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							    </g>
+							  </g>
+							  <defs>
+							    <clipPath id="clip0_64_81">
+							      <rect width="66" height="66" fill="white" transform="translate(0.000488281)"/>
+							    </clipPath>
+							  </defs>
+							</svg>
+						</div>
+						<h5>Transparente Abwicklung</h5>
+						<p>
+							Klare Kommunikation und effiziente Prozesse
+						</p>
+					</div>
+				</div>
+				<div class="section-dark__col">
+					<div class="section-dark__wrap">
+						<div class="section-dark__icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+							  <path d="M25.1774 28.5555C24.7649 28.143 24.5329 27.5833 24.5329 27V18.2C24.5329 16.9851 25.518 16 26.7329 16C27.9479 16 28.9329 16.9851 28.9329 18.2V26.0891L32.6884 29.8445C33.5478 30.7039 33.5478 32.0961 32.6884 32.9555C32.2587 33.3852 31.6958 33.6 31.1329 33.6C30.57 33.6 30.0071 33.3852 29.5774 32.9555L25.1774 28.5555ZM26.7329 5C25.518 5 24.5329 5.98506 24.5329 7.2C24.5329 8.41494 25.518 9.4 26.7329 9.4C36.4374 9.4 44.3329 17.2955 44.3329 27C44.3329 36.7045 36.4374 44.6 26.7329 44.6C17.0284 44.6 9.13291 36.7045 9.13291 27C9.13291 23.0318 10.4811 19.2688 12.8497 16.2277L14.1764 17.5544C14.5749 17.9529 15.1249 18.2 15.7329 18.2C16.9479 18.2 17.9329 17.2149 17.9329 16V9.4C17.9329 8.18506 16.9479 7.2 15.7329 7.2H9.13291C7.91797 7.2 6.93291 8.18506 6.93291 9.4C6.93291 10.008 7.17998 10.558 7.57852 10.9565L9.72803 13.1061C6.54941 16.9775 4.73291 21.8491 4.73291 27C4.73291 39.1312 14.6018 49 26.7329 49C38.8641 49 48.7329 39.1312 48.7329 27C48.7329 14.8688 38.8641 5 26.7329 5Z" fill="white"/>
+							</svg>
+						</div>
+						<h5>24h Kaufentscheidung</h5>
+						<p>
+							Schnelle Entscheidungen bis 500.000 Euro – ohne Wartezeiten 
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- SECTION DARK END -->
+
+	<!-- SECTION MEN -->
+	<section class="section-men" id="fourth">
+		<div class="wrapper">
+			<div class="section-men__row">
+				<div class="section-men__col">
+					<div class="section-men__wrap">
+						<div class="section-men__window wow fadeInUp" data-wow-delay="0.2s">
+							<h2>Was wir suchen? </h2>
+							<p>
+								Renovierungsbedürftige Wohnungen im Raum Bochum
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="section-men__col">
+					<div class="section-men__wrap">
+						<div class="section-men__img">
+							<img src="images/img-men.jpg" alt="Was wir suchen?">
+						</div>
+					</div>
+				</div>
+				<div class="section-men__col">
+					<div class="section-men__wrap">
+						<div class="section-men__window section-men__window_right wow fadeInUp" data-wow-delay="0.4s">
+							<h2>Was wir bieten?</h2>
+							<p>
+								Renovierte, hochwertige Wohnungen im Ruhrgebiet
+							</p>
+						</div>
+						<div class="section-men__text">
+							<h2>Kontakt:</h2>
+							Taleb Tatari – Chief Sales Officer <br>
+							Telefon: <a class="tel" href="tel:+4923497046350">+49 234 97046350</a><br>
+							E-Mail: <a href="mailto:taleb.tatari@ipe-group-immos.de">info@ipe-group-immos.de</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- SECTION MEN END -->
+
+
+	<!-- SECTION TEXT BTN -->
+	<div class="wrapper">
+		<section class="section-text-btn">
+			<div class="section-text-btn__row">
+				<div class="section-text-btn__text">
+					<h2>Lassen Sie uns ins Gespräch kommen:</h2>
+					<p>Interessiert an renovierten Wohnungen oder möchten Sie renovierungsbedürftige Immobilien vermitteln? Melden Sie sich bei uns – Ihr nächster Deal oder neues Zuhause wartet!</p>
+				</div>
+				<div class="section-text-btn__btn">
+					<a href="#fourth" class="anchors btn-default">Jetzt kontaktieren</a>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- SECTION TEXT BTN END -->
+
+
+	<!-- SECTION CAROUSEL -->
+	<section class="section-carousel" id="third">
+		<div class="wrapper">
+			<h2>Kundenrezensionen</h2>
+			<div class="section-carousel__slider">
+				<div class="section-carousel__item">
+					<div class="section-carousel__wrapper">
+						<div class="section-carousel__wrap">
+							<div class="section-carousel__text">
+								"Die Zusammenarbeit mit IPE war hervorragend. Die Abwicklung verlief genau wie versprochen und ich kann IPE nur weiterempfehlen – eine schnelle und umkomplizierte Umsetzung war für meine Kunden garantiert.“
+							</div>
+							<div class="section-carousel-name">
+								<div class="section-carousel-name__photo">
+									<img src="images/photo.jpg" alt="">
+								</div>
+								<div class="section-carousel-name__text">
+									<h6>Sathusan Mylvaganam</h6>
+									<p>Makler aus Gelsenkirchen</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-carousel__item">
+					<div class="section-carousel__wrapper">
+						<div class="section-carousel__wrap">
+							<div class="section-carousel__text">
+								"Dank der hervorragenden Unterstützung habe ich schnell mein neues Zuhause in Bochum gefunden. Alles lief unkompliziert und freundlich."
+							</div>
+							<div class="section-carousel-name">
+								<div class="section-carousel-name__photo">
+									<img src="images/photo-02.png" alt="">
+								</div>
+								<div class="section-carousel-name__text">
+									<h6>Sabine Rüttgers</h6>
+									<p>Käuferin aus Bochum</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-carousel__item">
+					<div class="section-carousel__wrapper">
+						<div class="section-carousel__wrap">
+							<div class="section-carousel__text">
+								"Ich investiere schon seit Jahren im Ruhrgebiet und schätze die fundierte Beratung. Die Marktkenntnis und der Service sind unschlagbar!"
+							</div>
+							<div class="section-carousel-name">
+								<div class="section-carousel-name__photo">
+									<img src="images/photo-03.png" alt="">
+								</div>
+								<div class="section-carousel-name__text">
+									<h6>Petra Schulz</h6>
+									<p>Investorin aus der Schweiz</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- SECTION CAROUSEL END -->
+
+	<!-- FOOTER -->
+	<div class="wrapper">
+		<footer class="footer">
+			<div class="footer__row">
+				<div class="footer__copyright">
+					&copy; 2025. IPE Group GmbH Immobilien GmbH
+				</div>
+				<div class="footer__nav">
+					<ul>
+						<li><a target="_blank" href="impressum.html">Impressum</a></li>
+						<li><a target="_blank" href="datenschutz.html">Datenschutz</a></li>
+						<li><a href="#">Cookies</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- FOOTER END -->
+
+
+
+
+</body>
+<script src="js/engineer.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/wow.js"></script>
+
+
+<!-- jQuery Import -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Cookie Notice Pro -->
+<link rel="stylesheet" href="css/cookienoticepro.style.css">
+<script src="js/cookienoticepro.script.js"></script>
+<script>
+    /* Initialize cookie consent banner */
+    $(document).ready(function () {
+        cookieNoticePro.init();
+    });
+
+    /* IMPORTANT: Remove the injectScripts function below if you are not using the Cookie Preferences Menu.
+    If you are only using Google scripts (such as Google Analytics or AdSense) and have enabled 
+    Google consent mode v2 in your config, you can remove this injectScripts function. 
+    Otherwise, use injectScripts to control which scripts are loaded based on user preferences. 
+    Inject script guide: https://codecanyon.net/item/cookie-notice-pro-advanced-jquery-plugin/32069094/faqs/51085*/
+
+    /* Start of injectScripts function */
+    const injectScripts = () => {
+        // Injects Google Analytics or other analytics scripts if the "analytics" preference is accepted by the user
+        if (cookieNoticePro.isPreferenceAccepted("analytics") === true) {
+            console.log("Analytics Scripts Running....");
+            // Add code here to load Google Analytics or other analytics scripts
+        }
+
+        // Injects marketing scripts (e.g., Google Ads, DoubleClick, Social Media pixels) if the "marketing" preference is accepted by the user
+        if (cookieNoticePro.isPreferenceAccepted("marketing") === true) {
+            console.log("Marketing Scripts Running....");
+            // Add code here to load marketing and remarketing scripts
+        }
+
+        // Injects user preference scripts (e.g., remember password, language settings) if the "preferences" preference is accepted by the user
+        if (cookieNoticePro.isPreferenceAccepted("preferences") === true) {
+            console.log("Preferences Scripts Running....");
+            // Add code here to load scripts that enhance user experience (like language preferences or login memory)
+        }
+    }
+    /* End of injectScripts function */
+</script>
+<!-- End Cookie Notice Pro -->
+
+</html>
