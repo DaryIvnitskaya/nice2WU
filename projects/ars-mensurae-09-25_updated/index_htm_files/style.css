@@ -407,6 +407,8 @@ h1{
 		-webkit-transition: ease all 0.5s;
 		transition: ease all 0.5s;
 		padding: 120px 30px;
+		height: 100%;
+		overflow: auto;
 	}
 	.header__nav.active {
 		left: 0;
