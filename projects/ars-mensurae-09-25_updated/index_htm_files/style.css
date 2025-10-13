@@ -169,6 +169,7 @@ h1{
 .section-info__text p{
 	font-style: italic;
 	margin: 0 0 18px;
+	line-height: 1.8;
 }
 
 .burger-menu {
